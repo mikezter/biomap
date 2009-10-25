@@ -12,7 +12,18 @@ set :scm, :git
 
 set :user, :mike
 set :use_sudo, false
+ssh_options[:forward_agent] = true
 
 role :app, "vs209172.vserver.de"
 role :web, "vs209172.vserver.de"
 role :db,  "vs209172.vserver.de", :primary => true
+
+namespace :deploy do
+  desc 'Restart application'
+  task :restart do
+    run "touch #{current_path}/tmp/restart.txt" 
+  end
+end
+
+
+
