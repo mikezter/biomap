@@ -1,0 +1,20 @@
+development:
+  adapter: mysql
+  username: biomap
+  password:
+  socket: /var/run/mysqld/mysqld.sock
+  database: biomap_development
+
+production:
+  adapter: mysql
+  username: biomap
+  password:
+  socket: /var/run/mysqld/mysqld.sock
+  database: biomap_production
+
+test:
+  adapter: mysql
+  username: biomap
+  password:
+  socket: /var/run/mysqld/mysqld.sock
+  database: biomap_test

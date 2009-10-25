@@ -1,0 +1,29 @@
+<% form_for @foto, :html => { :multipart => true } do |f| %>
+  <%= f.error_messages %>
+  <%= f.hidden_field :lng %>
+  <%= f.hidden_field :lat %>
+
+  <span>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </span>
+  <br />
+  <span>
+    <%= image_tag @foto.foto.url(:medium) %>
+  </span>
+  <br />
+  
+  <span>
+    <%= f.label :foto %><br />
+    <%= f.file_field :foto %>
+  </span>
+  <br />
+  <span>
+    <%= f.label :description %><br />
+    <%= f.text_area :description, :size => '120x30' %>
+  </span>
+  <br />
+  <label>Position</label><br/>
+  <%= @map.div(:width => 600,:height => 400) %><br/>
+  <span><%= f.submit "Submit" %></span>
+<% end %>

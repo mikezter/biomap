@@ -1,0 +1,25 @@
+<% title "www.biomapper.net" %>
+
+<% content_for :head do %>
+	<%= GMap.header %>
+	<!-- -->
+	<%= @map.to_html %>
+	<!-- -->
+<% end %>
+<% content_for :leftnav do %>
+
+<% end %>
+<% content_for :rightnav do %>
+    <%= link_to 'Neues Foto hochladen', new_foto_path %>
+    <div style="position:relative; bottom:0px">
+      <h3>Neueste Fotos</h3>
+      <% @fotos[0..10].each do |foto| %>
+        <%= link_to image_tag(foto.foto.url(:thumb)), foto %>
+      <% end %>
+    </div>
+<% end %>
+<center>
+  <%= @map.div(:width => 800,:height => 600) %>
+</center>
+
+

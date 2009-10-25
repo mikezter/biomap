@@ -1,0 +1,3715 @@
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2009-10-24 17:59:25) [GET]
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+Completed in 41ms (View: 1, DB: 0) | 200 OK [http://localhost/rails/info/properties]
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 18:01:29) [GET]
+  [4;36;1mFoto Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: fotos: SELECT * FROM "fotos" [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: fotos: SELECT * FROM "fotos" ):
+  app/controllers/fotos_controller.rb:3:in `index'
+
+Rendered rescues/_trace (24.2ms)
+Rendered rescues/_request_and_response (0.9ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (14.1ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateFotos (20091024160110)
+  [4;36;1mSQL (10.7ms)[0m   [0;1mCREATE TABLE `fotos` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `lat` float, `lng` float, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091024160110')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mdescribe `fotos`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW KEYS FROM `fotos`[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 18:03:18) [GET]
+  [4;35;1mFoto Load (0.0ms)[0m   [0mSQLite3::SQLException: no such table: fotos: SELECT * FROM "fotos" [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: fotos: SELECT * FROM "fotos" ):
+  app/controllers/fotos_controller.rb:3:in `index'
+
+Rendered rescues/_trace (23.8ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mDROP TABLE `fotos`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mCREATE TABLE `fotos` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `lat` float, `lng` float, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 18:03:44) [GET]
+  [4;36;1mFoto Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: fotos: SELECT * FROM "fotos" [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: fotos: SELECT * FROM "fotos" ):
+  app/controllers/fotos_controller.rb:3:in `index'
+
+Rendered rescues/_trace (50.4ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 18:03:44) [GET]
+  [4;35;1mFoto Load (0.0ms)[0m   [0mSQLite3::SQLException: no such table: fotos: SELECT * FROM "fotos" [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: fotos: SELECT * FROM "fotos" ):
+  app/controllers/fotos_controller.rb:3:in `index'
+
+Rendered rescues/_trace (23.5ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 18:03:45) [GET]
+  [4;36;1mFoto Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: fotos: SELECT * FROM "fotos" [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: fotos: SELECT * FROM "fotos" ):
+  app/controllers/fotos_controller.rb:3:in `index'
+
+Rendered rescues/_trace (51.2ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 18:03:49) [GET]
+  [4;35;1mFoto Load (0.3ms)[0m   [0mSELECT * FROM `fotos` [0m
+Rendering fotos/index
+
+ActionView::TemplateError (undefined method `title' for #<ActionView::Base:0x9155e60>) on line #1 of app/views/fotos/index.html.erb:
+1: <% title "Fotos" %>
+2: 
+3: <table>
+4:   <tr>
+
+    app/views/fotos/index.html.erb:1
+
+Rendered rescues/_trace (23.8ms)
+Rendered rescues/_request_and_response (0.9ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 18:03:50) [GET]
+  [4;35;1mFoto Load (0.2ms)[0m   [0mSELECT * FROM `fotos` [0m
+Rendering fotos/index
+
+ActionView::TemplateError (undefined method `title' for #<ActionView::Base:0x974e178>) on line #1 of app/views/fotos/index.html.erb:
+1: <% title "Fotos" %>
+2: 
+3: <table>
+4:   <tr>
+
+    app/views/fotos/index.html.erb:1
+
+Rendered rescues/_trace (24.8ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 18:04:06) [GET]
+  [4;35;1mFoto Load (0.1ms)[0m   [0mSELECT * FROM `fotos` [0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 35ms (View: 33, DB: 0) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#new (for 127.0.0.1 at 2009-10-24 18:04:23) [GET]
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/new
+Rendered fotos/_form (2.6ms)
+Completed in 10ms (View: 7, DB: 1) | 200 OK [http://localhost/fotos/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 18:04:25) [GET]
+  [4;35;1mFoto Load (0.2ms)[0m   [0mSELECT * FROM `fotos` [0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 18:05:21) [GET]
+  [4;35;1mFoto Load (0.2ms)[0m   [0mSELECT * FROM `fotos` [0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 192.168.0.1 at 2009-10-24 18:06:57) [GET]
+  [4;35;1mFoto Load (0.1ms)[0m   [0mSELECT * FROM `fotos` [0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 21ms (View: 19, DB: 0) | 200 OK [http://192.168.0.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateFotos (20091024160110)
+Migrating to AddFileToFotos (20091024161328)
+  [4;35;1mSQL (14.0ms)[0m   [0mALTER TABLE `fotos` ADD `file_name` varchar(255)[0m
+  [4;36;1mSQL (2.6ms)[0m   [0;1mALTER TABLE `fotos` ADD `content_type` varchar(255)[0m
+  [4;35;1mSQL (2.7ms)[0m   [0mALTER TABLE `fotos` ADD `file_size` int(11)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20091024161328')[0m
+Migrating to AddNameToFotos (20091024161459)
+  [4;35;1mSQL (10.9ms)[0m   [0mALTER TABLE `fotos` ADD `name` varchar(255)[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20091024161459')[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `fotos`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSHOW KEYS FROM `fotos`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to AddNameToFotos (20091024161459)
+  [4;35;1mSQL (4.7ms)[0m   [0mALTER TABLE `fotos` DROP `name`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20091024161459'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `fotos`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSHOW KEYS FROM `fotos`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to AddFileToFotos (20091024161328)
+  [4;35;1mSQL (6.6ms)[0m   [0mALTER TABLE `fotos` DROP `file_name`[0m
+  [4;36;1mSQL (2.6ms)[0m   [0;1mALTER TABLE `fotos` DROP `content_type`[0m
+  [4;35;1mSQL (2.5ms)[0m   [0mALTER TABLE `fotos` DROP `file_size`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20091024161328'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mdescribe `fotos`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSHOW KEYS FROM `fotos`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateFotos (20091024160110)
+  [4;35;1mSQL (2.6ms)[0m   [0mDROP TABLE `fotos`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20091024160110'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateFotos (20091024160110)
+  [4;35;1mSQL (3.3ms)[0m   [0mCREATE TABLE `fotos` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `lat` float, `lng` float, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20091024160110')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `fotos`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSHOW KEYS FROM `fotos`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mFoto Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 18:24:20) [GET]
+  [4;35;1mFoto Load (0.2ms)[0m   [0mSELECT * FROM `fotos` [0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 15ms (View: 12, DB: 0) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#new (for 127.0.0.1 at 2009-10-24 18:24:23) [GET]
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/new
+Rendered fotos/_form (2.9ms)
+Completed in 10ms (View: 7, DB: 1) | 200 OK [http://localhost/fotos/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#new (for 192.168.0.1 at 2009-10-24 18:24:44) [GET]
+  [4;35;1mFoto Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/new
+Rendered fotos/_form (10.6ms)
+Completed in 14ms (View: 11, DB: 1) | 200 OK [http://192.168.0.2/fotos/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 192.168.0.1 at 2009-10-24 18:24:52) [GET]
+  [4;35;1mFoto Load (0.4ms)[0m   [0mSELECT * FROM `fotos` [0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://192.168.0.2/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#new (for 127.0.0.1 at 2009-10-24 18:24:55) [GET]
+  [4;35;1mFoto Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/new
+Rendered fotos/_form (2.1ms)
+Completed in 6ms (View: 3, DB: 1) | 200 OK [http://localhost/fotos/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 18:25:00) [GET]
+  [4;35;1mFoto Load (0.1ms)[0m   [0mSELECT * FROM `fotos` [0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 18:25:02) [GET]
+  [4;35;1mFoto Load (0.1ms)[0m   [0mSELECT * FROM `fotos` [0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#new (for 127.0.0.1 at 2009-10-24 18:25:04) [GET]
+  [4;35;1mFoto Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/new
+Rendered fotos/_form (2.1ms)
+Completed in 6ms (View: 3, DB: 1) | 200 OK [http://localhost/fotos/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#new (for 127.0.0.1 at 2009-10-24 18:25:14) [GET]
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/new
+Rendered fotos/_form (2.1ms)
+Completed in 6ms (View: 3, DB: 1) | 200 OK [http://localhost/fotos/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#create (for 127.0.0.1 at 2009-10-24 18:25:16) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"0EZWXAy+GTarJVZusCaNrrnsKBWtymSP/HsmVRXYqVE=", "foto"=>{"name"=>"cvyxcvcx", "lng"=>"", "lat"=>""}}
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+WARNING: Can't mass-assign these protected attributes: name
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mFoto Create (0.1ms)[0m   [0mINSERT INTO `fotos` (`name`, `updated_at`, `lng`, `lat`, `created_at`) VALUES(NULL, '2009-10-24 16:25:16', NULL, NULL, '2009-10-24 16:25:16')[0m
+  [4;36;1mSQL (7.9ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/fotos/1
+Completed in 14ms (DB: 9) | 302 Found [http://localhost/fotos]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#show (for 127.0.0.1 at 2009-10-24 18:25:16) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mFoto Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mFoto Load (0.1ms)[0m   [0mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering fotos/show
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://localhost/fotos/1]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#show (for 127.0.0.1 at 2009-10-24 18:25:20) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.1ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering fotos/show
+Completed in 6ms (View: 3, DB: 1) | 200 OK [http://localhost/fotos/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 18:25:23) [GET]
+  [4;36;1mFoto Load (0.3ms)[0m   [0;1mSELECT * FROM `fotos` [0m
+Rendering template within layouts/application
+Rendering fotos/index
+  [4;35;1mFoto Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Completed in 7ms (View: 3, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#destroy (for 127.0.0.1 at 2009-10-24 18:25:26) [DELETE]
+  Parameters: {"authenticity_token"=>"0EZWXAy+GTarJVZusCaNrrnsKBWtymSP/HsmVRXYqVE=", "id"=>"1"}
+  [4;35;1mFoto Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.1ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 1) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mFoto Destroy (0.1ms)[0m   [0;1mDELETE FROM `fotos` WHERE `id` = 1[0m
+  [4;35;1mSQL (6.4ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/fotos
+Completed in 12ms (DB: 7) | 302 Found [http://localhost/fotos/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 18:25:26) [GET]
+  [4;35;1mFoto Load (0.2ms)[0m   [0mSELECT * FROM `fotos` [0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#new (for 127.0.0.1 at 2009-10-24 18:25:27) [GET]
+  [4;35;1mFoto Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/new
+Rendered fotos/_form (2.3ms)
+Completed in 6ms (View: 3, DB: 1) | 200 OK [http://localhost/fotos/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#create (for 127.0.0.1 at 2009-10-24 18:25:29) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"0EZWXAy+GTarJVZusCaNrrnsKBWtymSP/HsmVRXYqVE=", "foto"=>{"name"=>"fcfsdgdfgs", "lng"=>"", "lat"=>""}}
+  [4;35;1mFoto Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+WARNING: Can't mass-assign these protected attributes: name
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mFoto Create (0.1ms)[0m   [0mINSERT INTO `fotos` (`name`, `updated_at`, `lng`, `lat`, `created_at`) VALUES(NULL, '2009-10-24 16:25:29', NULL, NULL, '2009-10-24 16:25:29')[0m
+  [4;36;1mSQL (15.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/fotos/2
+Completed in 21ms (DB: 16) | 302 Found [http://localhost/fotos]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#show (for 127.0.0.1 at 2009-10-24 18:25:30) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mFoto Load (0.1ms)[0m   [0mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering fotos/show
+Completed in 7ms (View: 3, DB: 1) | 200 OK [http://localhost/fotos/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 18:25:31) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mFoto Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.0ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering fotos/edit
+Rendered fotos/_form (2.4ms)
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://localhost/fotos/2/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 18:25:32) [GET]
+  [4;36;1mFoto Load (0.2ms)[0m   [0;1mSELECT * FROM `fotos` [0m
+Rendering template within layouts/application
+Rendering fotos/index
+  [4;35;1mFoto Columns (0.4ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Completed in 6ms (View: 3, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 18:25:34) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mFoto Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.0ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering fotos/edit
+Rendered fotos/_form (2.3ms)
+Completed in 7ms (View: 3, DB: 1) | 200 OK [http://localhost/fotos/2/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 18:25:35) [GET]
+  [4;36;1mFoto Load (0.1ms)[0m   [0;1mSELECT * FROM `fotos` [0m
+Rendering template within layouts/application
+Rendering fotos/index
+  [4;35;1mFoto Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Completed in 7ms (View: 3, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#destroy (for 127.0.0.1 at 2009-10-24 18:25:36) [DELETE]
+  Parameters: {"authenticity_token"=>"0EZWXAy+GTarJVZusCaNrrnsKBWtymSP/HsmVRXYqVE=", "id"=>"2"}
+  [4;35;1mFoto Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.0ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 2) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mFoto Destroy (0.1ms)[0m   [0;1mDELETE FROM `fotos` WHERE `id` = 2[0m
+  [4;35;1mSQL (4.7ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/fotos
+Completed in 9ms (DB: 6) | 302 Found [http://localhost/fotos/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 18:25:36) [GET]
+  [4;35;1mFoto Load (0.2ms)[0m   [0mSELECT * FROM `fotos` [0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#new (for 127.0.0.1 at 2009-10-24 18:25:43) [GET]
+  [4;35;1mFoto Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/new
+Rendered fotos/_form (28.6ms)
+Completed in 33ms (View: 29, DB: 1) | 200 OK [http://localhost/fotos/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#create (for 127.0.0.1 at 2009-10-24 18:25:50) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"0EZWXAy+GTarJVZusCaNrrnsKBWtymSP/HsmVRXYqVE=", "foto"=>{"name"=>"fghdfhfgd", "lng"=>"", "lat"=>""}}
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+WARNING: Can't mass-assign these protected attributes: name
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mFoto Create (0.1ms)[0m   [0mINSERT INTO `fotos` (`name`, `updated_at`, `lng`, `lat`, `created_at`) VALUES(NULL, '2009-10-24 16:25:50', NULL, NULL, '2009-10-24 16:25:50')[0m
+  [4;36;1mSQL (2.7ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/fotos/3
+Completed in 8ms (DB: 3) | 302 Found [http://localhost/fotos]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#show (for 127.0.0.1 at 2009-10-24 18:25:50) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mFoto Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mFoto Load (0.1ms)[0m   [0mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 3) [0m
+Rendering template within layouts/application
+Rendering fotos/show
+Completed in 7ms (View: 3, DB: 1) | 200 OK [http://localhost/fotos/3]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#destroy (for 127.0.0.1 at 2009-10-24 18:26:21) [DELETE]
+  Parameters: {"authenticity_token"=>"0EZWXAy+GTarJVZusCaNrrnsKBWtymSP/HsmVRXYqVE=", "id"=>"3"}
+  [4;35;1mFoto Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.0ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 3) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mFoto Destroy (0.2ms)[0m   [0;1mDELETE FROM `fotos` WHERE `id` = 3[0m
+  [4;35;1mSQL (6.2ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/fotos
+Completed in 11ms (DB: 7) | 302 Found [http://localhost/fotos/3]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 18:26:21) [GET]
+  [4;35;1mFoto Load (0.2ms)[0m   [0mSELECT * FROM `fotos` [0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#new (for 127.0.0.1 at 2009-10-24 18:26:22) [GET]
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/new
+Rendered fotos/_form (2.2ms)
+Completed in 6ms (View: 3, DB: 1) | 200 OK [http://localhost/fotos/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#create (for 127.0.0.1 at 2009-10-24 18:26:23) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"0EZWXAy+GTarJVZusCaNrrnsKBWtymSP/HsmVRXYqVE=", "foto"=>{"name"=>"dfgfdsgdf", "lng"=>"", "lat"=>""}}
+  [4;35;1mFoto Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mFoto Create (0.1ms)[0m   [0mINSERT INTO `fotos` (`name`, `updated_at`, `lng`, `lat`, `created_at`) VALUES('dfgfdsgdf', '2009-10-24 16:26:23', NULL, NULL, '2009-10-24 16:26:23')[0m
+  [4;36;1mSQL (7.5ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/fotos/4
+Completed in 12ms (DB: 8) | 302 Found [http://localhost/fotos]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#show (for 127.0.0.1 at 2009-10-24 18:26:24) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mFoto Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mFoto Load (0.1ms)[0m   [0mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 4) [0m
+Rendering template within layouts/application
+Rendering fotos/show
+Completed in 6ms (View: 3, DB: 1) | 200 OK [http://localhost/fotos/4]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#destroy (for 127.0.0.1 at 2009-10-24 18:26:26) [DELETE]
+  Parameters: {"authenticity_token"=>"0EZWXAy+GTarJVZusCaNrrnsKBWtymSP/HsmVRXYqVE=", "id"=>"4"}
+  [4;35;1mFoto Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.0ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 4) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mFoto Destroy (0.1ms)[0m   [0;1mDELETE FROM `fotos` WHERE `id` = 4[0m
+  [4;35;1mSQL (7.6ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/fotos
+Completed in 12ms (DB: 9) | 302 Found [http://localhost/fotos/4]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 18:26:26) [GET]
+  [4;35;1mFoto Load (0.2ms)[0m   [0mSELECT * FROM `fotos` [0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#new (for 127.0.0.1 at 2009-10-24 18:26:36) [GET]
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/new
+Rendered fotos/_form (2.4ms)
+Completed in 32ms (View: 29, DB: 1) | 200 OK [http://localhost/fotos/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateFotos (20091024160110)
+Migrating to AddFotoColumnsToFotos (20091024162941)
+  [4;35;1mSQL (17.8ms)[0m   [0mALTER TABLE `fotos` ADD `foto_file_name` varchar(255)[0m
+  [4;36;1mSQL (2.7ms)[0m   [0;1mALTER TABLE `fotos` ADD `foto_content_type` varchar(255)[0m
+  [4;35;1mSQL (4.8ms)[0m   [0mALTER TABLE `fotos` ADD `foto_file_size` int(11)[0m
+  [4;36;1mSQL (11.0ms)[0m   [0;1mALTER TABLE `fotos` ADD `foto_updated_at` datetime[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091024162941')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `fotos`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW KEYS FROM `fotos`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 18:36:13) [GET]
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mFoto Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+
+NoMethodError (undefined method `has_attached_file' for #<Class:0xac1b470>):
+  app/models/foto.rb:5
+  app/controllers/fotos_controller.rb:3:in `index'
+
+Rendered rescues/_trace (23.5ms)
+Rendered rescues/_request_and_response (0.9ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 18:36:20) [GET]
+  [4;35;1mFoto Load (0.2ms)[0m   [0mSELECT * FROM `fotos` [0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 16ms (View: 13, DB: 0) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#new (for 127.0.0.1 at 2009-10-24 18:36:21) [GET]
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/new
+Rendered fotos/_form (4.1ms)
+Completed in 12ms (View: 9, DB: 1) | 200 OK [http://localhost/fotos/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#new (for 127.0.0.1 at 2009-10-24 18:36:34) [GET]
+  [4;35;1mFoto Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/new
+Rendered fotos/_form (3.7ms)
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/fotos/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#medium to png (for 127.0.0.1 at 2009-10-24 18:36:34) [GET]
+  Parameters: {"id"=>"missing"}
+
+ActionController::UnknownAction (No action responded to medium. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#create (for 127.0.0.1 at 2009-10-24 18:37:15) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"0EZWXAy+GTarJVZusCaNrrnsKBWtymSP/HsmVRXYqVE=", "foto"=>{"name"=>"Venus", "lng"=>"", "foto"=>"VENUS.jpg", "lat"=>""}}
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mFoto Create (0.2ms)[0m   [0;1mINSERT INTO `fotos` (`name`, `foto_updated_at`, `updated_at`, `foto_file_size`, `lng`, `foto_content_type`, `foto_file_name`, `lat`, `created_at`) VALUES('Venus', NULL, '2009-10-24 16:37:15', NULL, NULL, NULL, NULL, NULL, '2009-10-24 16:37:15')[0m
+[paperclip] Saving attachments.
+  [4;35;1mSQL (7.5ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/fotos/1
+Completed in 14ms (DB: 8) | 302 Found [http://localhost/fotos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#show (for 127.0.0.1 at 2009-10-24 18:37:15) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.1ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering fotos/show
+Completed in 11ms (View: 7, DB: 1) | 200 OK [http://localhost/fotos/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#original to png (for 127.0.0.1 at 2009-10-24 18:37:15) [GET]
+  Parameters: {"id"=>"missing"}
+
+ActionController::UnknownAction (No action responded to original. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#show (for 127.0.0.1 at 2009-10-24 18:37:17) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mFoto Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.0ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering fotos/show
+Completed in 8ms (View: 4, DB: 1) | 200 OK [http://localhost/fotos/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#original to png (for 127.0.0.1 at 2009-10-24 18:37:17) [GET]
+  Parameters: {"id"=>"missing"}
+
+ActionController::UnknownAction (No action responded to original. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 18:37:21) [GET]
+  [4;35;1mFoto Load (0.2ms)[0m   [0mSELECT * FROM `fotos` [0m
+Rendering template within layouts/application
+Rendering fotos/index
+  [4;36;1mFoto Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+Completed in 8ms (View: 4, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#thumb to png (for 127.0.0.1 at 2009-10-24 18:37:21) [GET]
+  Parameters: {"id"=>"missing"}
+
+ActionController::UnknownAction (No action responded to thumb. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 18:40:15) [GET]
+  [4;35;1mFoto Load (0.1ms)[0m   [0mSELECT * FROM `fotos` [0m
+Rendering template within layouts/application
+Rendering fotos/index
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+Completed in 20ms (View: 16, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#thumb to png (for 127.0.0.1 at 2009-10-24 18:40:15) [GET]
+  Parameters: {"id"=>"missing"}
+
+ActionController::UnknownAction (No action responded to thumb. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 18:40:16) [GET]
+  [4;35;1mFoto Load (0.2ms)[0m   [0mSELECT * FROM `fotos` [0m
+Rendering template within layouts/application
+Rendering fotos/index
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+Completed in 8ms (View: 4, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#thumb to png (for 127.0.0.1 at 2009-10-24 18:40:16) [GET]
+  Parameters: {"id"=>"missing"}
+
+ActionController::UnknownAction (No action responded to thumb. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 18:40:17) [GET]
+  [4;35;1mFoto Load (0.1ms)[0m   [0mSELECT * FROM `fotos` [0m
+Rendering template within layouts/application
+Rendering fotos/index
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+Completed in 8ms (View: 4, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#thumb to png (for 127.0.0.1 at 2009-10-24 18:40:17) [GET]
+  Parameters: {"id"=>"missing"}
+
+ActionController::UnknownAction (No action responded to thumb. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 18:40:18) [GET]
+  [4;35;1mFoto Load (0.1ms)[0m   [0mSELECT * FROM `fotos` [0m
+Rendering template within layouts/application
+Rendering fotos/index
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+Completed in 8ms (View: 4, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#thumb to png (for 127.0.0.1 at 2009-10-24 18:40:18) [GET]
+  Parameters: {"id"=>"missing"}
+
+ActionController::UnknownAction (No action responded to thumb. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 18:40:19) [GET]
+  [4;35;1mFoto Load (0.1ms)[0m   [0mSELECT * FROM `fotos` [0m
+Rendering template within layouts/application
+Rendering fotos/index
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+Completed in 8ms (View: 4, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#thumb to png (for 127.0.0.1 at 2009-10-24 18:40:19) [GET]
+  Parameters: {"id"=>"missing"}
+
+ActionController::UnknownAction (No action responded to thumb. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#new (for 127.0.0.1 at 2009-10-24 18:40:25) [GET]
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/new
+Rendered fotos/_form (3.6ms)
+Completed in 12ms (View: 8, DB: 1) | 200 OK [http://localhost/fotos/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#medium to png (for 127.0.0.1 at 2009-10-24 18:40:25) [GET]
+  Parameters: {"id"=>"missing"}
+
+ActionController::UnknownAction (No action responded to medium. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#create (for 127.0.0.1 at 2009-10-24 18:40:31) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"0EZWXAy+GTarJVZusCaNrrnsKBWtymSP/HsmVRXYqVE=", "foto"=>{"name"=>"rtzrz", "lng"=>"", "foto"=>"090423_redesign_03.png", "lat"=>""}}
+  [4;36;1mFoto Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mFoto Create (0.2ms)[0m   [0;1mINSERT INTO `fotos` (`name`, `foto_updated_at`, `updated_at`, `foto_file_size`, `lng`, `foto_content_type`, `foto_file_name`, `lat`, `created_at`) VALUES('rtzrz', NULL, '2009-10-24 16:40:31', NULL, NULL, NULL, NULL, NULL, '2009-10-24 16:40:31')[0m
+[paperclip] Saving attachments.
+  [4;35;1mSQL (2.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/fotos/2
+Completed in 9ms (DB: 3) | 302 Found [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#show (for 127.0.0.1 at 2009-10-24 18:40:31) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.2ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering fotos/show
+Completed in 10ms (View: 6, DB: 1) | 200 OK [http://localhost/fotos/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#original to png (for 127.0.0.1 at 2009-10-24 18:40:31) [GET]
+  Parameters: {"id"=>"missing"}
+
+ActionController::UnknownAction (No action responded to original. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#destroy (for 127.0.0.1 at 2009-10-24 18:41:22) [DELETE]
+  Parameters: {"authenticity_token"=>"0EZWXAy+GTarJVZusCaNrrnsKBWtymSP/HsmVRXYqVE=", "id"=>"2"}
+  [4;35;1mFoto Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.0ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 2) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+[paperclip] Deleting attachments.
+  [4;36;1mFoto Destroy (0.1ms)[0m   [0;1mDELETE FROM `fotos` WHERE `id` = 2[0m
+  [4;35;1mSQL (3.3ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/fotos
+Completed in 9ms (DB: 4) | 302 Found [http://localhost/fotos/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 18:41:23) [GET]
+  [4;35;1mFoto Load (0.2ms)[0m   [0mSELECT * FROM `fotos` [0m
+Rendering template within layouts/application
+Rendering fotos/index
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+Completed in 8ms (View: 4, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#thumb to png (for 127.0.0.1 at 2009-10-24 18:41:23) [GET]
+  Parameters: {"id"=>"missing"}
+
+ActionController::UnknownAction (No action responded to thumb. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#destroy (for 127.0.0.1 at 2009-10-24 18:41:25) [DELETE]
+  Parameters: {"authenticity_token"=>"0EZWXAy+GTarJVZusCaNrrnsKBWtymSP/HsmVRXYqVE=", "id"=>"1"}
+  [4;35;1mFoto Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.2ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 1) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+[paperclip] Deleting attachments.
+  [4;36;1mFoto Destroy (0.2ms)[0m   [0;1mDELETE FROM `fotos` WHERE `id` = 1[0m
+  [4;35;1mSQL (3.9ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/fotos
+Completed in 10ms (DB: 5) | 302 Found [http://localhost/fotos/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 18:41:25) [GET]
+  [4;35;1mFoto Load (0.3ms)[0m   [0mSELECT * FROM `fotos` [0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 31ms (View: 1, DB: 0) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#new (for 127.0.0.1 at 2009-10-24 18:41:26) [GET]
+  [4;35;1mFoto Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/new
+Rendered fotos/_form (2.9ms)
+Completed in 8ms (View: 4, DB: 1) | 200 OK [http://localhost/fotos/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#medium to png (for 127.0.0.1 at 2009-10-24 18:41:26) [GET]
+  Parameters: {"id"=>"missing"}
+
+ActionController::UnknownAction (No action responded to medium. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#create (for 127.0.0.1 at 2009-10-24 18:41:30) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"0EZWXAy+GTarJVZusCaNrrnsKBWtymSP/HsmVRXYqVE=", "foto"=>{"name"=>"", "lng"=>"", "foto"=>"02-meinkp-premium-teaser.jpg", "lat"=>""}}
+  [4;36;1mFoto Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mFoto Create (0.1ms)[0m   [0;1mINSERT INTO `fotos` (`name`, `foto_updated_at`, `updated_at`, `foto_file_size`, `lng`, `foto_content_type`, `foto_file_name`, `lat`, `created_at`) VALUES('', NULL, '2009-10-24 16:41:30', NULL, NULL, NULL, NULL, NULL, '2009-10-24 16:41:30')[0m
+[paperclip] Saving attachments.
+  [4;35;1mSQL (3.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/fotos/3
+Completed in 10ms (DB: 4) | 302 Found [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#show (for 127.0.0.1 at 2009-10-24 18:41:30) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.1ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 3) [0m
+Rendering template within layouts/application
+Rendering fotos/show
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/fotos/3]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#original to png (for 127.0.0.1 at 2009-10-24 18:41:30) [GET]
+  Parameters: {"id"=>"missing"}
+
+ActionController::UnknownAction (No action responded to original. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#destroy (for 127.0.0.1 at 2009-10-24 18:42:05) [DELETE]
+  Parameters: {"authenticity_token"=>"0EZWXAy+GTarJVZusCaNrrnsKBWtymSP/HsmVRXYqVE=", "id"=>"3"}
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.1ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 3) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+[paperclip] Deleting attachments.
+  [4;36;1mFoto Destroy (0.2ms)[0m   [0;1mDELETE FROM `fotos` WHERE `id` = 3[0m
+  [4;35;1mSQL (4.6ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/fotos
+Completed in 10ms (DB: 5) | 302 Found [http://localhost/fotos/3]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 18:42:05) [GET]
+  [4;35;1mFoto Load (0.2ms)[0m   [0mSELECT * FROM `fotos` [0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#new (for 127.0.0.1 at 2009-10-24 18:42:07) [GET]
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/new
+Rendered fotos/_form (30.4ms)
+Completed in 37ms (View: 33, DB: 1) | 200 OK [http://localhost/fotos/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#medium to png (for 127.0.0.1 at 2009-10-24 18:42:07) [GET]
+  Parameters: {"id"=>"missing"}
+
+ActionController::UnknownAction (No action responded to medium. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#create (for 127.0.0.1 at 2009-10-24 18:42:12) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"0EZWXAy+GTarJVZusCaNrrnsKBWtymSP/HsmVRXYqVE=", "foto"=>{"name"=>"fcfsdgdfgs", "lng"=>"", "foto"=>#<File:/tmp/RackMultipart.11332.0>, "lat"=>""}}
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mFoto Create (0.2ms)[0m   [0;1mINSERT INTO `fotos` (`name`, `foto_updated_at`, `updated_at`, `foto_file_size`, `lng`, `foto_content_type`, `foto_file_name`, `lat`, `created_at`) VALUES('fcfsdgdfgs', '2009-10-24 16:42:12', '2009-10-24 16:42:13', 378833, NULL, 'image/jpeg', '05.jpg', NULL, '2009-10-24 16:42:13')[0m
+[paperclip] Saving attachments.
+[paperclip] saving /home/mike/biomap/public/system/fotos/4/original/05.jpg
+[paperclip] saving /home/mike/biomap/public/system/fotos/4/medium/05.jpg
+[paperclip] saving /home/mike/biomap/public/system/fotos/4/thumb/05.jpg
+  [4;35;1mSQL (3.9ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/fotos/4
+Completed in 793ms (DB: 5) | 302 Found [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#show (for 127.0.0.1 at 2009-10-24 18:42:13) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.1ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 4) [0m
+Rendering template within layouts/application
+Rendering fotos/show
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/fotos/4]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#destroy (for 127.0.0.1 at 2009-10-24 18:42:22) [DELETE]
+  Parameters: {"authenticity_token"=>"0EZWXAy+GTarJVZusCaNrrnsKBWtymSP/HsmVRXYqVE=", "id"=>"4"}
+  [4;36;1mFoto Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mFoto Load (0.1ms)[0m   [0mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 4) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+[paperclip] Deleting attachments.
+[paperclip] deleting /home/mike/biomap/public/system/fotos/4/original/05.jpg
+[paperclip] deleting /home/mike/biomap/public/system/fotos/4/medium/05.jpg
+[paperclip] deleting /home/mike/biomap/public/system/fotos/4/thumb/05.jpg
+  [4;35;1mFoto Destroy (0.2ms)[0m   [0mDELETE FROM `fotos` WHERE `id` = 4[0m
+  [4;36;1mSQL (5.9ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/fotos
+Completed in 14ms (DB: 7) | 302 Found [http://localhost/fotos/4]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 18:42:22) [GET]
+  [4;36;1mFoto Load (0.2ms)[0m   [0;1mSELECT * FROM `fotos` [0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 37ms (View: 1, DB: 0) | 200 OK [http://localhost/fotos]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#new (for 127.0.0.1 at 2009-10-24 18:42:23) [GET]
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/new
+Rendered fotos/_form (3.0ms)
+Completed in 8ms (View: 4, DB: 1) | 200 OK [http://localhost/fotos/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#medium to png (for 127.0.0.1 at 2009-10-24 18:42:23) [GET]
+  Parameters: {"id"=>"missing"}
+
+ActionController::UnknownAction (No action responded to medium. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#create (for 127.0.0.1 at 2009-10-24 18:42:38) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"0EZWXAy+GTarJVZusCaNrrnsKBWtymSP/HsmVRXYqVE=", "foto"=>{"name"=>"Venus", "lng"=>"", "foto"=>#<File:/tmp/RackMultipart.11332.1>, "lat"=>""}}
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mFoto Create (0.2ms)[0m   [0mINSERT INTO `fotos` (`name`, `foto_updated_at`, `updated_at`, `foto_file_size`, `lng`, `foto_content_type`, `foto_file_name`, `lat`, `created_at`) VALUES('Venus', '2009-10-24 16:42:38', '2009-10-24 16:42:38', 57321, NULL, 'image/jpeg', 'Kiss-these-hands.jpg', NULL, '2009-10-24 16:42:38')[0m
+[paperclip] Saving attachments.
+[paperclip] saving /home/mike/biomap/public/system/fotos/5/original/Kiss-these-hands.jpg
+[paperclip] saving /home/mike/biomap/public/system/fotos/5/medium/Kiss-these-hands.jpg
+[paperclip] saving /home/mike/biomap/public/system/fotos/5/thumb/Kiss-these-hands.jpg
+  [4;36;1mSQL (5.1ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/fotos/5
+Completed in 136ms (DB: 6) | 302 Found [http://localhost/fotos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#show (for 127.0.0.1 at 2009-10-24 18:42:38) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mFoto Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mFoto Load (0.1ms)[0m   [0mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 5) [0m
+Rendering template within layouts/application
+Rendering fotos/show
+Completed in 11ms (View: 5, DB: 2) | 200 OK [http://localhost/fotos/5]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 18:42:43) [GET]
+  [4;35;1mFoto Load (0.2ms)[0m   [0mSELECT * FROM `fotos` [0m
+Rendering template within layouts/application
+Rendering fotos/index
+  [4;36;1mFoto Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+Completed in 8ms (View: 4, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#new (for 127.0.0.1 at 2009-10-24 18:42:48) [GET]
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/new
+Rendered fotos/_form (3.1ms)
+Completed in 8ms (View: 4, DB: 1) | 200 OK [http://localhost/fotos/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#medium to png (for 127.0.0.1 at 2009-10-24 18:42:48) [GET]
+  Parameters: {"id"=>"missing"}
+
+ActionController::UnknownAction (No action responded to medium. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#create (for 127.0.0.1 at 2009-10-24 18:43:05) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"0EZWXAy+GTarJVZusCaNrrnsKBWtymSP/HsmVRXYqVE=", "foto"=>{"name"=>"Skyline", "lng"=>"", "foto"=>#<File:/tmp/RackMultipart.11332.0>, "lat"=>""}}
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mFoto Create (0.2ms)[0m   [0mINSERT INTO `fotos` (`name`, `foto_updated_at`, `updated_at`, `foto_file_size`, `lng`, `foto_content_type`, `foto_file_name`, `lat`, `created_at`) VALUES('Skyline', '2009-10-24 16:43:05', '2009-10-24 16:43:05', 150683, NULL, 'image/jpeg', 'Skyline-color.jpg', NULL, '2009-10-24 16:43:05')[0m
+[paperclip] Saving attachments.
+[paperclip] saving /home/mike/biomap/public/system/fotos/6/original/Skyline-color.jpg
+[paperclip] saving /home/mike/biomap/public/system/fotos/6/medium/Skyline-color.jpg
+[paperclip] saving /home/mike/biomap/public/system/fotos/6/thumb/Skyline-color.jpg
+  [4;36;1mSQL (4.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/fotos/6
+Completed in 281ms (DB: 5) | 302 Found [http://localhost/fotos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#show (for 127.0.0.1 at 2009-10-24 18:43:05) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mFoto Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mFoto Load (0.1ms)[0m   [0mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 6) [0m
+Rendering template within layouts/application
+Rendering fotos/show
+Completed in 10ms (View: 4, DB: 2) | 200 OK [http://localhost/fotos/6]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 18:43:08) [GET]
+  [4;35;1mFoto Load (0.2ms)[0m   [0mSELECT * FROM `fotos` [0m
+Rendering template within layouts/application
+Rendering fotos/index
+  [4;36;1mFoto Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+Completed in 10ms (View: 6, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 18:43:11) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mFoto Load (0.1ms)[0m   [0mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 5) [0m
+Rendering template within layouts/application
+Rendering fotos/edit
+Rendered fotos/_form (3.7ms)
+Completed in 11ms (View: 7, DB: 1) | 200 OK [http://localhost/fotos/5/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#update (for 127.0.0.1 at 2009-10-24 18:43:15) [PUT]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"0EZWXAy+GTarJVZusCaNrrnsKBWtymSP/HsmVRXYqVE=", "id"=>"5", "foto"=>{"name"=>"Hands", "lng"=>"", "lat"=>""}}
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.1ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 5) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mFoto Update (0.2ms)[0m   [0;1mUPDATE `fotos` SET `updated_at` = '2009-10-24 16:43:15', `name` = 'Hands' WHERE `id` = 5[0m
+[paperclip] Saving attachments.
+  [4;35;1mSQL (4.9ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/fotos/5
+Completed in 12ms (DB: 6) | 302 Found [http://localhost/fotos/5]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#show (for 127.0.0.1 at 2009-10-24 18:43:15) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.2ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 5) [0m
+Rendering template within layouts/application
+Rendering fotos/show
+Completed in 8ms (View: 4, DB: 1) | 200 OK [http://localhost/fotos/5]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 18:43:17) [GET]
+  [4;36;1mFoto Load (0.2ms)[0m   [0;1mSELECT * FROM `fotos` [0m
+Rendering template within layouts/application
+Rendering fotos/index
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Completed in 11ms (View: 7, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#new (for 127.0.0.1 at 2009-10-24 18:43:37) [GET]
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/new
+Rendered fotos/_form (2.9ms)
+Completed in 7ms (View: 4, DB: 1) | 200 OK [http://localhost/fotos/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#medium to png (for 127.0.0.1 at 2009-10-24 18:43:37) [GET]
+  Parameters: {"id"=>"missing"}
+
+ActionController::UnknownAction (No action responded to medium. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 18:43:47) [GET]
+  [4;36;1mFoto Load (0.1ms)[0m   [0;1mSELECT * FROM `fotos` [0m
+Rendering template within layouts/application
+Rendering fotos/index
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Completed in 10ms (View: 6, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#new (for 127.0.0.1 at 2009-10-24 18:43:50) [GET]
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/new
+Rendered fotos/_form (2.9ms)
+Completed in 7ms (View: 4, DB: 1) | 200 OK [http://localhost/fotos/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#medium to png (for 127.0.0.1 at 2009-10-24 18:43:50) [GET]
+  Parameters: {"id"=>"missing"}
+
+ActionController::UnknownAction (No action responded to medium. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#create (for 127.0.0.1 at 2009-10-24 18:44:05) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"0EZWXAy+GTarJVZusCaNrrnsKBWtymSP/HsmVRXYqVE=", "foto"=>{"name"=>"Venus", "lng"=>"", "foto"=>#<File:/tmp/RackMultipart.11332.1>, "lat"=>""}}
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mFoto Create (0.2ms)[0m   [0;1mINSERT INTO `fotos` (`name`, `foto_updated_at`, `updated_at`, `foto_file_size`, `lng`, `foto_content_type`, `foto_file_name`, `lat`, `created_at`) VALUES('Venus', '2009-10-24 16:44:05', '2009-10-24 16:44:05', 176784, NULL, 'image/jpeg', 'VENUS.jpg', NULL, '2009-10-24 16:44:05')[0m
+[paperclip] Saving attachments.
+[paperclip] saving /home/mike/biomap/public/system/fotos/7/original/VENUS.jpg
+[paperclip] saving /home/mike/biomap/public/system/fotos/7/medium/VENUS.jpg
+[paperclip] saving /home/mike/biomap/public/system/fotos/7/thumb/VENUS.jpg
+  [4;35;1mSQL (26.7ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/fotos/7
+Completed in 330ms (DB: 28) | 302 Found [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#show (for 127.0.0.1 at 2009-10-24 18:44:06) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.2ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 7) [0m
+Rendering template within layouts/application
+Rendering fotos/show
+Completed in 8ms (View: 4, DB: 1) | 200 OK [http://localhost/fotos/7]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 18:44:09) [GET]
+  [4;36;1mFoto Load (0.2ms)[0m   [0;1mSELECT * FROM `fotos` [0m
+Rendering template within layouts/application
+Rendering fotos/index
+  [4;35;1mFoto Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Completed in 12ms (View: 8, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 18:44:14) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.0ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 7) [0m
+Rendering template within layouts/application
+Rendering fotos/edit
+Rendered fotos/_form (3.4ms)
+Completed in 8ms (View: 4, DB: 1) | 200 OK [http://localhost/fotos/7/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 18:45:24) [GET]
+  [4;36;1mFoto Load (0.2ms)[0m   [0;1mSELECT * FROM `fotos` [0m
+Rendering template within layouts/application
+Rendering fotos/index
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Completed in 12ms (View: 8, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#new (for 127.0.0.1 at 2009-10-24 18:45:25) [GET]
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/new
+Rendered fotos/_form (2.9ms)
+Completed in 8ms (View: 4, DB: 1) | 200 OK [http://localhost/fotos/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#medium to png (for 127.0.0.1 at 2009-10-24 18:45:25) [GET]
+  Parameters: {"id"=>"missing"}
+
+ActionController::UnknownAction (No action responded to medium. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#new (for 127.0.0.1 at 2009-10-24 18:47:00) [GET]
+  [4;36;1mFoto Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/new
+Rendered fotos/_form (3.7ms)
+Completed in 10ms (View: 6, DB: 1) | 200 OK [http://localhost/fotos/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#medium to png (for 127.0.0.1 at 2009-10-24 18:47:00) [GET]
+  Parameters: {"id"=>"missing"}
+
+ActionController::UnknownAction (No action responded to medium. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 18:47:02) [GET]
+  [4;35;1mFoto Load (0.1ms)[0m   [0mSELECT * FROM `fotos` [0m
+Rendering template within layouts/application
+Rendering fotos/index
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+Completed in 12ms (View: 9, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 18:47:04) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mFoto Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mFoto Load (0.0ms)[0m   [0mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 7) [0m
+Rendering template within layouts/application
+Rendering fotos/edit
+Rendered fotos/_form (3.3ms)
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/fotos/7/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 18:47:21) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.0ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 7) [0m
+Rendering template within layouts/application
+Rendering fotos/edit
+Rendered fotos/_form (3.4ms)
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/fotos/7/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mFoto Load (0.2ms)[0m   [0mSELECT * FROM `fotos` LIMIT 1[0m
+  [4;36;1mFoto Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mFoto Load (0.1ms)[0m   [0mSELECT * FROM `fotos` LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 18:58:51) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mFoto Load (0.3ms)[0m   [0mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 7) [0m
+Rendering template within layouts/application
+Rendering fotos/edit
+
+ActionView::TemplateError (localhost,192.168.0.2) on line #3 of app/views/fotos/edit.html.erb:
+1: <% title "Edit Foto" %>
+2: <% content_for :head do %>
+3: 	<%= GMap.header %>
+4: 	<%= @map.to_html %>
+5: <% end %>
+6: 
+
+    app/views/fotos/edit.html.erb:3
+    app/views/fotos/edit.html.erb:2
+
+Rendered rescues/_trace (26.5ms)
+Rendered rescues/_request_and_response (0.9ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 18:59:55) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.0ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 7) [0m
+Rendering template within layouts/application
+Rendering fotos/edit
+
+ActionView::TemplateError (localhost,192.168.0.2) on line #3 of app/views/fotos/edit.html.erb:
+1: <% title "Edit Foto" %>
+2: <% content_for :head do %>
+3: 	<%= GMap.header %>
+4: 	<%= @map.to_html %>
+5: <% end %>
+6: 
+
+    app/views/fotos/edit.html.erb:3
+    app/views/fotos/edit.html.erb:2
+
+Rendered rescues/_trace (26.5ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 18:59:55) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mFoto Load (0.0ms)[0m   [0mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 7) [0m
+Rendering template within layouts/application
+Rendering fotos/edit
+
+ActionView::TemplateError (localhost,192.168.0.2) on line #3 of app/views/fotos/edit.html.erb:
+1: <% title "Edit Foto" %>
+2: <% content_for :head do %>
+3: 	<%= GMap.header %>
+4: 	<%= @map.to_html %>
+5: <% end %>
+6: 
+
+    app/views/fotos/edit.html.erb:3
+    app/views/fotos/edit.html.erb:2
+
+Rendered rescues/_trace (25.9ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 18:59:59) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.0ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 7) [0m
+Rendering template within layouts/application
+Rendering fotos/edit
+
+ActionView::TemplateError (localhost) on line #3 of app/views/fotos/edit.html.erb:
+1: <% title "Edit Foto" %>
+2: <% content_for :head do %>
+3: 	<%= GMap.header %>
+4: 	<%= @map.to_html %>
+5: <% end %>
+6: 
+
+    app/views/fotos/edit.html.erb:3
+    app/views/fotos/edit.html.erb:2
+
+Rendered rescues/_trace (27.8ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 19:00:00) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mFoto Load (0.0ms)[0m   [0mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 7) [0m
+Rendering template within layouts/application
+Rendering fotos/edit
+
+ActionView::TemplateError (localhost) on line #3 of app/views/fotos/edit.html.erb:
+1: <% title "Edit Foto" %>
+2: <% content_for :head do %>
+3: 	<%= GMap.header %>
+4: 	<%= @map.to_html %>
+5: <% end %>
+6: 
+
+    app/views/fotos/edit.html.erb:3
+    app/views/fotos/edit.html.erb:2
+
+Rendered rescues/_trace (25.7ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 19:00:01) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mFoto Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.1ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 7) [0m
+Rendering template within layouts/application
+Rendering fotos/edit
+
+ActionView::TemplateError (localhost) on line #3 of app/views/fotos/edit.html.erb:
+1: <% title "Edit Foto" %>
+2: <% content_for :head do %>
+3: 	<%= GMap.header %>
+4: 	<%= @map.to_html %>
+5: <% end %>
+6: 
+
+    app/views/fotos/edit.html.erb:3
+    app/views/fotos/edit.html.erb:2
+
+Rendered rescues/_trace (54.6ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 19:00:02) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mFoto Load (0.0ms)[0m   [0mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 7) [0m
+Rendering template within layouts/application
+Rendering fotos/edit
+
+ActionView::TemplateError (localhost) on line #3 of app/views/fotos/edit.html.erb:
+1: <% title "Edit Foto" %>
+2: <% content_for :head do %>
+3: 	<%= GMap.header %>
+4: 	<%= @map.to_html %>
+5: <% end %>
+6: 
+
+    app/views/fotos/edit.html.erb:3
+    app/views/fotos/edit.html.erb:2
+
+Rendered rescues/_trace (28.7ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 19:00:18) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.0ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 7) [0m
+Rendering template within layouts/application
+Rendering fotos/edit
+
+ActionView::TemplateError (ABQIAAAAzMUFFnT9uH0xq39J0Y4kbhTJQa0g3IQ9GZqIMmInSLzwtGDKaBR6j135zrztfTGVOm2QlWnkaidDIQ #192.168.0.2) on line #3 of app/views/fotos/edit.html.erb:
+1: <% title "Edit Foto" %>
+2: <% content_for :head do %>
+3: 	<%= GMap.header %>
+4: 	<%= @map.to_html %>
+5: <% end %>
+6: 
+
+    app/views/fotos/edit.html.erb:3
+    app/views/fotos/edit.html.erb:2
+
+Rendered rescues/_trace (27.5ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 19:00:42) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.0ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 7) [0m
+Rendering template within layouts/application
+Rendering fotos/edit
+Rendered fotos/_form (30.3ms)
+Completed in 43ms (View: 38, DB: 1) | 200 OK [http://localhost/fotos/7/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 19:02:51) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mFoto Load (0.0ms)[0m   [0mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 7) [0m
+Rendering template within layouts/application
+Rendering fotos/edit
+Rendered fotos/_form (4.2ms)
+Completed in 14ms (View: 10, DB: 1) | 200 OK [http://localhost/fotos/7/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 19:03:22) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mFoto Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.0ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 7) [0m
+Rendering template within layouts/application
+Rendering fotos/edit
+Rendered fotos/_form (3.6ms)
+Completed in 11ms (View: 7, DB: 1) | 200 OK [http://localhost/fotos/7/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 19:04:10) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mFoto Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mFoto Load (0.0ms)[0m   [0mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 7) [0m
+Rendering template within layouts/application
+Rendering fotos/edit
+Rendered fotos/_form (3.3ms)
+Completed in 11ms (View: 7, DB: 1) | 200 OK [http://localhost/fotos/7/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 19:08:53) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mFoto Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.0ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 7) [0m
+Rendering template within layouts/application
+Rendering fotos/edit
+Rendered fotos/_form (3.2ms)
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/fotos/7/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 19:22:52) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mFoto Load (0.0ms)[0m   [0mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 7) [0m
+Rendering template within layouts/application
+Rendering fotos/edit
+Rendered fotos/_form (3.4ms)
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/fotos/7/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 19:24:10) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.0ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 7) [0m
+Rendering template within layouts/application
+Rendering fotos/edit
+Rendered fotos/_form (3.3ms)
+Completed in 10ms (View: 6, DB: 1) | 200 OK [http://localhost/fotos/7/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 19:25:15) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mFoto Load (0.0ms)[0m   [0mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 7) [0m
+
+NameError (uninitialized constant FotosController::G_HYBRID_MAP):
+  app/controllers/fotos_controller.rb:33:in `edit'
+
+Rendered rescues/_trace (20.4ms)
+Rendered rescues/_request_and_response (0.9ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 19:30:28) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mFoto Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.2ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 7) [0m
+
+NameError (uninitialized constant FotosController::G_HYBRID_MAP):
+  app/controllers/fotos_controller.rb:33:in `edit'
+
+Rendered rescues/_trace (19.6ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 19:30:29) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mFoto Load (0.0ms)[0m   [0mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 7) [0m
+
+NameError (uninitialized constant FotosController::G_HYBRID_MAP):
+  app/controllers/fotos_controller.rb:33:in `edit'
+
+Rendered rescues/_trace (49.4ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 19:30:30) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mFoto Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.0ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 7) [0m
+
+NameError (uninitialized constant FotosController::G_HYBRID_MAP):
+  app/controllers/fotos_controller.rb:33:in `edit'
+
+Rendered rescues/_trace (19.5ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 19:30:59) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mFoto Load (0.0ms)[0m   [0mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 7) [0m
+Rendering template within layouts/application
+Rendering fotos/edit
+Rendered fotos/_form (3.4ms)
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/fotos/7/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 19:31:07) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.0ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 7) [0m
+Rendering template within layouts/application
+Rendering fotos/edit
+Rendered fotos/_form (3.3ms)
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/fotos/7/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 19:31:24) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mFoto Load (0.0ms)[0m   [0mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 7) [0m
+Rendering template within layouts/application
+Rendering fotos/edit
+Rendered fotos/_form (3.4ms)
+Completed in 38ms (View: 34, DB: 1) | 200 OK [http://localhost/fotos/7/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 19:31:26) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.0ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 7) [0m
+Rendering template within layouts/application
+Rendering fotos/edit
+Rendered fotos/_form (4.5ms)
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/fotos/7/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 19:31:35) [GET]
+  [4;36;1mFoto Load (0.1ms)[0m   [0;1mSELECT * FROM `fotos` [0m
+Rendering template within layouts/application
+Rendering fotos/index
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Completed in 14ms (View: 11, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#destroy (for 127.0.0.1 at 2009-10-24 19:31:38) [DELETE]
+  Parameters: {"authenticity_token"=>"0EZWXAy+GTarJVZusCaNrrnsKBWtymSP/HsmVRXYqVE=", "id"=>"7"}
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.0ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 7) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+[paperclip] Deleting attachments.
+[paperclip] deleting /home/mike/biomap/public/system/fotos/7/original/VENUS.jpg
+[paperclip] deleting /home/mike/biomap/public/system/fotos/7/medium/VENUS.jpg
+[paperclip] deleting /home/mike/biomap/public/system/fotos/7/thumb/VENUS.jpg
+  [4;36;1mFoto Destroy (0.2ms)[0m   [0;1mDELETE FROM `fotos` WHERE `id` = 7[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/fotos
+Completed in 12ms (DB: 5) | 302 Found [http://localhost/fotos/7]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 19:31:38) [GET]
+  [4;35;1mFoto Load (0.2ms)[0m   [0mSELECT * FROM `fotos` [0m
+Rendering template within layouts/application
+Rendering fotos/index
+  [4;36;1mFoto Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+Completed in 10ms (View: 6, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#new (for 127.0.0.1 at 2009-10-24 19:31:40) [GET]
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/new
+Rendered fotos/_form (3.0ms)
+Completed in 9ms (View: 6, DB: 1) | 200 OK [http://localhost/fotos/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#medium to png (for 127.0.0.1 at 2009-10-24 19:31:40) [GET]
+  Parameters: {"id"=>"missing"}
+
+ActionController::UnknownAction (No action responded to medium. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#show (for 127.0.0.1 at 2009-10-24 19:32:04) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mFoto Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.2ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 6) [0m
+Rendering template within layouts/application
+Rendering fotos/show
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/fotos/6]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 19:32:16) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mFoto Load (0.1ms)[0m   [0mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 6) [0m
+Rendering template within layouts/application
+Rendering fotos/edit
+Rendered fotos/_form (3.5ms)
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://localhost/fotos/6/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 19:32:54) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.0ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 6) [0m
+Rendering template within layouts/application
+Rendering fotos/edit
+Rendered fotos/_form (3.3ms)
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/fotos/6/edit]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 19:34:20) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mFoto Load (0.0ms)[0m   [0mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 6) [0m
+Rendering template within layouts/application
+Rendering fotos/edit
+Rendered fotos/_form (3.3ms)
+Completed in 8ms (View: 4, DB: 1) | 200 OK [http://localhost/fotos/6/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 19:34:25) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.0ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 6) [0m
+Rendering template within layouts/application
+Rendering fotos/edit
+Rendered fotos/_form (3.3ms)
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/fotos/6/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 19:39:33) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mFoto Load (0.3ms)[0m   [0mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 6) [0m
+
+NoMethodError (undefined method `alert' for #<FotosController:0x876840c>):
+  app/controllers/fotos_controller.rb:34:in `edit'
+
+Rendered rescues/_trace (47.7ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 19:39:46) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mFoto Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.0ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 6) [0m
+
+ArgumentError (wrong number of arguments (2 for 3)):
+  app/controllers/fotos_controller.rb:34:in `event_init'
+  app/controllers/fotos_controller.rb:34:in `edit'
+
+Rendered rescues/_trace (19.6ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 19:40:03) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mFoto Load (0.0ms)[0m   [0mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 6) [0m
+
+NoMethodError (undefined method `to_javascript' for "map":String):
+  app/controllers/fotos_controller.rb:34:in `edit'
+
+Rendered rescues/_trace (19.7ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 19:42:31) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mFoto Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.1ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 6) [0m
+
+NoMethodError (undefined method `to_javascript' for "map":String):
+  app/controllers/fotos_controller.rb:34:in `edit'
+
+Rendered rescues/_trace (19.7ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 19:42:43) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mFoto Load (0.0ms)[0m   [0mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 6) [0m
+Rendering template within layouts/application
+Rendering fotos/edit
+Rendered fotos/_form (3.3ms)
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/fotos/6/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 19:43:24) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mFoto Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.0ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 6) [0m
+Rendering template within layouts/application
+Rendering fotos/edit
+Rendered fotos/_form (3.3ms)
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/fotos/6/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 19:46:27) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mFoto Load (0.0ms)[0m   [0mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 6) [0m
+Rendering template within layouts/application
+Rendering fotos/edit
+Rendered fotos/_form (3.4ms)
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/fotos/6/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 19:47:08) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.0ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 6) [0m
+Rendering template within layouts/application
+Rendering fotos/edit
+Rendered fotos/_form (3.4ms)
+Completed in 13ms (View: 8, DB: 1) | 200 OK [http://localhost/fotos/6/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 19:47:46) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mFoto Load (0.1ms)[0m   [0mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 6) [0m
+Rendering template within layouts/application
+Rendering fotos/edit
+Rendered fotos/_form (3.4ms)
+Completed in 12ms (View: 8, DB: 1) | 200 OK [http://localhost/fotos/6/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 19:47:56) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.0ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 6) [0m
+Rendering template within layouts/application
+Rendering fotos/edit
+Rendered fotos/_form (3.3ms)
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://localhost/fotos/6/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 19:48:07) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mFoto Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mFoto Load (0.5ms)[0m   [0mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 6) [0m
+Rendering template within layouts/application
+Rendering fotos/edit
+Rendered fotos/_form (3.4ms)
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/fotos/6/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 19:49:40) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mFoto Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.0ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 6) [0m
+Rendering template within layouts/application
+Rendering fotos/edit
+Rendered fotos/_form (3.5ms)
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/fotos/6/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 19:49:55) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mFoto Load (0.0ms)[0m   [0mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 6) [0m
+Rendering template within layouts/application
+Rendering fotos/edit
+Rendered fotos/_form (3.5ms)
+Completed in 37ms (View: 6, DB: 1) | 200 OK [http://localhost/fotos/6/edit]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 19:49:58) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.0ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 6) [0m
+Rendering template within layouts/application
+Rendering fotos/edit
+Rendered fotos/_form (3.4ms)
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/fotos/6/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 19:51:54) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mFoto Load (0.1ms)[0m   [0mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 6) [0m
+Rendering template within layouts/application
+Rendering fotos/edit
+Rendered fotos/_form (3.4ms)
+Completed in 10ms (View: 6, DB: 1) | 200 OK [http://localhost/fotos/6/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 19:52:22) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.0ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 6) [0m
+Rendering template within layouts/application
+Rendering fotos/edit
+Rendered fotos/_form (4.9ms)
+Completed in 14ms (View: 7, DB: 1) | 200 OK [http://localhost/fotos/6/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 19:52:51) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mFoto Load (0.0ms)[0m   [0mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 6) [0m
+Rendering template within layouts/application
+Rendering fotos/edit
+Rendered fotos/_form (3.4ms)
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://localhost/fotos/6/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 19:52:57) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mFoto Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.0ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 6) [0m
+Rendering template within layouts/application
+Rendering fotos/edit
+Rendered fotos/_form (3.5ms)
+Completed in 10ms (View: 6, DB: 1) | 200 OK [http://localhost/fotos/6/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 19:55:11) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mFoto Load (0.0ms)[0m   [0mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 6) [0m
+Rendering template within layouts/application
+Rendering fotos/edit
+Rendered fotos/_form (3.5ms)
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/fotos/6/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 19:55:43) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.0ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 6) [0m
+Rendering template within layouts/application
+Rendering fotos/edit
+Rendered fotos/_form (3.4ms)
+Completed in 11ms (View: 7, DB: 1) | 200 OK [http://localhost/fotos/6/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 19:55:56) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mFoto Load (0.0ms)[0m   [0mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 6) [0m
+Rendering template within layouts/application
+Rendering fotos/edit
+Rendered fotos/_form (3.4ms)
+Completed in 11ms (View: 7, DB: 1) | 200 OK [http://localhost/fotos/6/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 19:59:05) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.0ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 6) [0m
+Rendering template within layouts/application
+Rendering fotos/edit
+Rendered fotos/_form (3.3ms)
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/fotos/6/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#update (for 127.0.0.1 at 2009-10-24 20:00:36) [PUT]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"0EZWXAy+GTarJVZusCaNrrnsKBWtymSP/HsmVRXYqVE=", "id"=>"6", "foto"=>{"name"=>"Skyline", "lng"=>"13.18359375", "lat"=>"60.07653665712753"}}
+  [4;36;1mFoto Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mFoto Load (0.0ms)[0m   [0mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 6) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mFoto Update (0.2ms)[0m   [0mUPDATE `fotos` SET `lat` = 60.0765366571275, `lng` = 13.18359375, `updated_at` = '2009-10-24 18:00:36' WHERE `id` = 6[0m
+[paperclip] Saving attachments.
+  [4;36;1mSQL (3.8ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/fotos/6
+Completed in 11ms (DB: 5) | 302 Found [http://localhost/fotos/6]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#show (for 127.0.0.1 at 2009-10-24 20:00:36) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mFoto Load (0.1ms)[0m   [0mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 6) [0m
+Rendering template within layouts/application
+Rendering fotos/show
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://localhost/fotos/6]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 20:00:40) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.1ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 6) [0m
+Rendering template within layouts/application
+Rendering fotos/edit
+Rendered fotos/_form (3.4ms)
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://localhost/fotos/6/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 20:02:46) [GET]
+  [4;36;1mFoto Load (0.2ms)[0m   [0;1mSELECT * FROM `fotos` [0m
+Rendering template within layouts/application
+Rendering fotos/index
+  [4;35;1mFoto Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Completed in 11ms (View: 7, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#new (for 127.0.0.1 at 2009-10-24 20:04:07) [GET]
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/new
+Rendered fotos/_form (2.9ms)
+Completed in 8ms (View: 4, DB: 1) | 200 OK [http://localhost/fotos/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#medium to png (for 127.0.0.1 at 2009-10-24 20:04:07) [GET]
+  Parameters: {"id"=>"missing"}
+
+ActionController::UnknownAction (No action responded to medium. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#new (for 127.0.0.1 at 2009-10-24 20:05:15) [GET]
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/new
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.to_html) on line #5 of app/views/fotos/new.html.erb:
+2: <% content_for :head do %>
+3: 	<%= GMap.header %>
+4: 	<!-- -->
+5: 	<%= @map.to_html %>
+6: 	<!-- -->
+7:   <script>
+8:     function mapClick(latlng) {
+
+    app/views/fotos/new.html.erb:5
+    app/views/fotos/new.html.erb:2
+
+Rendered rescues/_trace (26.5ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#new (for 127.0.0.1 at 2009-10-24 20:07:38) [GET]
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.center_zoom_init):
+  app/controllers/fotos_controller.rb:13:in `new'
+
+Rendered rescues/_trace (48.2ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#new (for 127.0.0.1 at 2009-10-24 20:08:07) [GET]
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/new
+Rendered fotos/_form (3.2ms)
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://localhost/fotos/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#medium to png (for 127.0.0.1 at 2009-10-24 20:08:08) [GET]
+  Parameters: {"id"=>"missing"}
+
+ActionController::UnknownAction (No action responded to medium. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 20:09:00) [GET]
+  [4;35;1mFoto Load (0.1ms)[0m   [0mSELECT * FROM `fotos` [0m
+Rendering template within layouts/application
+Rendering fotos/index
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+Completed in 11ms (View: 7, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#show (for 127.0.0.1 at 2009-10-24 20:10:54) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mFoto Load (0.3ms)[0m   [0mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 5) [0m
+Rendering template within layouts/application
+Rendering fotos/show
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://localhost/fotos/5]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 20:10:57) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.1ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 5) [0m
+Rendering template within layouts/application
+Rendering fotos/edit
+Rendered fotos/_form (2.6ms)
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/fotos/5/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 20:11:43) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mFoto Load (0.0ms)[0m   [0mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 5) [0m
+Rendering template within layouts/application
+Rendering fotos/edit
+Rendered fotos/_form (2.6ms)
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/fotos/5/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 20:12:11) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mFoto Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.0ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 5) [0m
+Rendering template within layouts/application
+Rendering fotos/edit
+Rendered fotos/_form (2.5ms)
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/fotos/5/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 20:13:34) [GET]
+  [4;36;1mFoto Load (0.1ms)[0m   [0;1mSELECT * FROM `fotos` [0m
+Rendering template within layouts/application
+Rendering fotos/index
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Completed in 14ms (View: 10, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 20:14:03) [GET]
+  [4;35;1mFoto Load (0.1ms)[0m   [0mSELECT * FROM `fotos` [0m
+Rendering template within layouts/application
+Rendering fotos/index
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+Completed in 14ms (View: 10, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 20:15:07) [GET]
+  [4;36;1mFoto Load (0.1ms)[0m   [0;1mSELECT * FROM `fotos` [0m
+Rendering template within layouts/application
+Rendering fotos/index
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Completed in 11ms (View: 7, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 20:15:28) [GET]
+  [4;35;1mFoto Load (0.1ms)[0m   [0mSELECT * FROM `fotos` [0m
+Rendering template within layouts/application
+Rendering fotos/index
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+Completed in 11ms (View: 8, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 20:15:35) [GET]
+  [4;36;1mFoto Load (0.1ms)[0m   [0;1mSELECT * FROM `fotos` [0m
+Rendering template within layouts/application
+Rendering fotos/index
+  [4;35;1mFoto Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Completed in 11ms (View: 7, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 20:15:54) [GET]
+  [4;35;1mFoto Load (0.1ms)[0m   [0mSELECT * FROM `fotos` [0m
+Rendering template within layouts/application
+Rendering fotos/index
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+Completed in 11ms (View: 7, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 20:19:48) [GET]
+  [4;36;1mFoto Load (0.1ms)[0m   [0;1mSELECT * FROM `fotos` [0m
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 37ms (View: 32, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 20:20:01) [GET]
+  [4;35;1mFoto Load (0.1ms)[0m   [0mSELECT * FROM `fotos` [0m
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 20:21:34) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mFoto Load (0.0ms)[0m   [0mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 5) [0m
+Rendering template within layouts/application
+Rendering fotos/edit
+Rendered fotos/_form (2.6ms)
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/fotos/5/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#update (for 127.0.0.1 at 2009-10-24 20:22:58) [PUT]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"0EZWXAy+GTarJVZusCaNrrnsKBWtymSP/HsmVRXYqVE=", "id"=>"5", "foto"=>{"name"=>"Hands", "lng"=>"0.25646209716796875", "lat"=>"0.09411617839143178"}}
+  [4;35;1mFoto Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.1ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 5) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mFoto Update (0.2ms)[0m   [0;1mUPDATE `fotos` SET `lat` = 0.0941161783914318, `lng` = 0.256462097167969, `updated_at` = '2009-10-24 18:22:58' WHERE `id` = 5[0m
+[paperclip] Saving attachments.
+  [4;35;1mSQL (3.2ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/fotos/5
+Completed in 10ms (DB: 4) | 302 Found [http://localhost/fotos/5]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#show (for 127.0.0.1 at 2009-10-24 20:22:58) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.2ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 5) [0m
+Rendering template within layouts/application
+Rendering fotos/show
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/fotos/5]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 20:23:00) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mFoto Load (0.0ms)[0m   [0mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 5) [0m
+Rendering template within layouts/application
+Rendering fotos/edit
+Rendered fotos/_form (2.6ms)
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://localhost/fotos/5/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#update (for 127.0.0.1 at 2009-10-24 20:24:05) [PUT]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"0EZWXAy+GTarJVZusCaNrrnsKBWtymSP/HsmVRXYqVE=", "id"=>"5", "foto"=>{"name"=>"Hands", "lng"=>"68.73046875", "lat"=>"55.591587925915846"}}
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.0ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 5) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mFoto Update (0.1ms)[0m   [0;1mUPDATE `fotos` SET `lat` = 55.5915879259158, `lng` = 68.73046875, `updated_at` = '2009-10-24 18:24:05' WHERE `id` = 5[0m
+[paperclip] Saving attachments.
+  [4;35;1mSQL (2.9ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/fotos/5
+Completed in 9ms (DB: 4) | 302 Found [http://localhost/fotos/5]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#show (for 127.0.0.1 at 2009-10-24 20:24:05) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.2ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 5) [0m
+Rendering template within layouts/application
+Rendering fotos/show
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/fotos/5]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 20:24:07) [GET]
+  [4;36;1mFoto Load (0.2ms)[0m   [0;1mSELECT * FROM `fotos` [0m
+  [4;35;1mFoto Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 14ms (View: 9, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateFotos (20091024160110)
+Migrating to AddFotoColumnsToFotos (20091024162941)
+Migrating to AddDescriptionToFotos (20091024182647)
+  [4;35;1mSQL (17.9ms)[0m   [0mALTER TABLE `fotos` ADD `description` text[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20091024182647')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `fotos`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSHOW KEYS FROM `fotos`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 20:28:49) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.2ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 6) [0m
+Rendering template within layouts/application
+Rendering fotos/edit
+Rendered fotos/_form (3.5ms)
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/fotos/6/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 20:29:04) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mFoto Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mFoto Load (0.0ms)[0m   [0mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 6) [0m
+Rendering template within layouts/application
+Rendering fotos/edit
+Rendered fotos/_form (3.4ms)
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/fotos/6/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#update (for 127.0.0.1 at 2009-10-24 20:29:40) [PUT]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"0EZWXAy+GTarJVZusCaNrrnsKBWtymSP/HsmVRXYqVE=", "id"=>"6", "foto"=>{"name"=>"Skyline", "lng"=>"9.788818359375", "description"=>"Nackt vor der Wand", "lat"=>"51.74154299744065"}}
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.0ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 6) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mFoto Update (0.2ms)[0m   [0;1mUPDATE `fotos` SET `lat` = 51.7415429974407, `lng` = 9.788818359375, `description` = 'Nackt vor der Wand', `updated_at` = '2009-10-24 18:29:40' WHERE `id` = 6[0m
+[paperclip] Saving attachments.
+  [4;35;1mSQL (11.6ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/fotos/6
+Completed in 19ms (DB: 13) | 302 Found [http://localhost/fotos/6]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#show (for 127.0.0.1 at 2009-10-24 20:29:40) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.2ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 6) [0m
+Rendering template within layouts/application
+Rendering fotos/show
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://localhost/fotos/6]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 20:29:42) [GET]
+  [4;36;1mFoto Load (2.4ms)[0m   [0;1mSELECT * FROM `fotos` [0m
+  [4;35;1mFoto Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 13ms (View: 6, DB: 3) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#new (for 127.0.0.1 at 2009-10-24 20:36:01) [GET]
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/new
+Rendered fotos/_form (3.2ms)
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://localhost/fotos/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#medium to png (for 127.0.0.1 at 2009-10-24 20:36:04) [GET]
+  Parameters: {"id"=>"missing"}
+
+ActionController::UnknownAction (No action responded to medium. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#create (for 127.0.0.1 at 2009-10-24 20:36:34) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"0EZWXAy+GTarJVZusCaNrrnsKBWtymSP/HsmVRXYqVE=", "foto"=>{"name"=>"Neu", "lng"=>"-52.3828125", "description"=>"Hier wirds beschrieben", "foto"=>#<File:/tmp/RackMultipart.12010.1>, "lat"=>"-11.821464146859341"}}
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mFoto Create (0.2ms)[0m   [0;1mINSERT INTO `fotos` (`name`, `foto_updated_at`, `updated_at`, `foto_file_size`, `lng`, `foto_content_type`, `description`, `foto_file_name`, `lat`, `created_at`) VALUES('Neu', '2009-10-24 18:36:34', '2009-10-24 18:36:34', 256036, -52.3828125, 'image/png', 'Hier wirds beschrieben', '090423_redesign_03.png', -11.8214641468593, '2009-10-24 18:36:34')[0m
+[paperclip] Saving attachments.
+[paperclip] saving /home/mike/biomap/public/system/fotos/7/medium/090423_redesign_03.png
+[paperclip] saving /home/mike/biomap/public/system/fotos/7/thumb/090423_redesign_03.png
+[paperclip] saving /home/mike/biomap/public/system/fotos/7/original/090423_redesign_03.png
+  [4;35;1mSQL (5.3ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/fotos/7
+Completed in 672ms (DB: 7) | 302 Found [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#show (for 127.0.0.1 at 2009-10-24 20:36:34) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mFoto Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.2ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 7) [0m
+Rendering template within layouts/application
+Rendering fotos/show
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/fotos/7]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 20:36:42) [GET]
+  [4;36;1mFoto Load (0.2ms)[0m   [0;1mSELECT * FROM `fotos` [0m
+  [4;35;1mFoto Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/controllers/fotos_controller.rb:16:in `sort_by'
+  app/controllers/fotos_controller.rb:16:in `index'
+
+Rendered rescues/_trace (21.2ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 20:36:51) [GET]
+  [4;35;1mFoto Load (0.1ms)[0m   [0mSELECT * FROM `fotos` [0m
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 43ms (View: 37, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 20:43:58) [GET]
+  [4;36;1mFoto Load (0.4ms)[0m   [0;1mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 18ms (View: 12, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 20:44:30) [GET]
+  [4;35;1mFoto Load (0.1ms)[0m   [0mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 14ms (View: 9, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 20:45:31) [GET]
+  [4;36;1mFoto Load (0.1ms)[0m   [0;1mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 14ms (View: 9, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#show (for 127.0.0.1 at 2009-10-24 20:46:09) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mFoto Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.2ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 6) [0m
+Rendering template within layouts/application
+Rendering fotos/show
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://localhost/fotos/6]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 20:46:10) [GET]
+  [4;36;1mFoto Load (0.1ms)[0m   [0;1mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 14ms (View: 9, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 20:47:58) [GET]
+  [4;35;1mFoto Load (0.1ms)[0m   [0mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 20:49:03) [GET]
+  [4;36;1mFoto Load (0.1ms)[0m   [0;1mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 16ms (View: 11, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 20:50:18) [GET]
+  [4;35;1mFoto Load (0.1ms)[0m   [0mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 16ms (View: 11, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 20:50:56) [GET]
+  [4;36;1mFoto Load (0.1ms)[0m   [0;1mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 23ms (View: 18, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 20:51:10) [GET]
+  [4;35;1mFoto Load (0.1ms)[0m   [0mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 16ms (View: 11, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 20:51:45) [GET]
+  [4;36;1mFoto Load (0.1ms)[0m   [0;1mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 20:51:59) [GET]
+  [4;35;1mFoto Load (0.1ms)[0m   [0mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 20:52:52) [GET]
+  [4;36;1mFoto Load (0.1ms)[0m   [0;1mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;35;1mFoto Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 18ms (View: 13, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 20:53:13) [GET]
+  [4;35;1mFoto Load (0.1ms)[0m   [0mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 43ms (View: 38, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 20:54:08) [GET]
+  [4;36;1mFoto Load (0.1ms)[0m   [0;1mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;35;1mFoto Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 18ms (View: 12, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 20:55:45) [GET]
+  [4;35;1mFoto Load (0.1ms)[0m   [0mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 20:56:14) [GET]
+  [4;36;1mFoto Load (0.2ms)[0m   [0;1mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 20:56:50) [GET]
+  [4;35;1mFoto Load (0.1ms)[0m   [0mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;36;1mFoto Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 38ms (View: 6, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 20:57:54) [GET]
+  [4;36;1mFoto Load (0.1ms)[0m   [0;1mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#show (for 127.0.0.1 at 2009-10-24 20:58:40) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.2ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 5) [0m
+Rendering template within layouts/application
+Rendering fotos/show
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://localhost/fotos/5]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 20:58:43) [GET]
+  [4;36;1mFoto Load (0.1ms)[0m   [0;1mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#show (for 127.0.0.1 at 2009-10-24 21:01:05) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.1ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 6) [0m
+Rendering template within layouts/application
+Rendering fotos/show
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://localhost/fotos/6]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 21:01:07) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mFoto Load (0.1ms)[0m   [0mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 6) [0m
+Rendering template within layouts/application
+Rendering fotos/edit
+Rendered fotos/_form (2.8ms)
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/fotos/6/edit]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 21:01:22) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.1ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 6) [0m
+Rendering template within layouts/application
+Rendering fotos/edit
+Rendered fotos/_form (2.7ms)
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/fotos/6/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#update (for 127.0.0.1 at 2009-10-24 21:07:38) [PUT]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"0EZWXAy+GTarJVZusCaNrrnsKBWtymSP/HsmVRXYqVE=", "id"=>"6", "foto"=>{"name"=>"Skyline", "lng"=>"-1.6534423828125", "description"=>"Nackt vor der Wand", "lat"=>"51.17291461180686"}}
+  [4;36;1mFoto Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mFoto Load (0.0ms)[0m   [0mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 6) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mFoto Update (0.2ms)[0m   [0mUPDATE `fotos` SET `lat` = 51.1729146118069, `lng` = -1.6534423828125, `updated_at` = '2009-10-24 19:07:38' WHERE `id` = 6[0m
+[paperclip] Saving attachments.
+  [4;36;1mSQL (17.2ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/fotos/6
+Completed in 24ms (DB: 18) | 302 Found [http://localhost/fotos/6]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#show (for 127.0.0.1 at 2009-10-24 21:07:38) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mFoto Load (0.2ms)[0m   [0mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 6) [0m
+Rendering template within layouts/application
+Rendering fotos/show
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://localhost/fotos/6]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 21:07:41) [GET]
+  [4;35;1mFoto Load (0.3ms)[0m   [0mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;36;1mFoto Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#new (for 127.0.0.1 at 2009-10-24 21:14:35) [GET]
+  [4;36;1mFoto Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/new
+Rendered fotos/_form (3.3ms)
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://localhost/fotos/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#medium to png (for 127.0.0.1 at 2009-10-24 21:14:39) [GET]
+  Parameters: {"id"=>"missing"}
+
+ActionController::UnknownAction (No action responded to medium. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#create (for 127.0.0.1 at 2009-10-24 21:15:48) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"0EZWXAy+GTarJVZusCaNrrnsKBWtymSP/HsmVRXYqVE=", "foto"=>{"name"=>"Jette ist geil", "lng"=>"", "description"=>"mikis schlüssel", "foto"=>#<File:/tmp/RackMultipart.12010.0>, "lat"=>""}}
+  [4;35;1mFoto Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mFoto Create (0.2ms)[0m   [0mINSERT INTO `fotos` (`name`, `foto_updated_at`, `updated_at`, `foto_file_size`, `lng`, `foto_content_type`, `description`, `foto_file_name`, `lat`, `created_at`) VALUES('Jette ist geil', '2009-10-24 19:15:48', '2009-10-24 19:15:48', 314238, NULL, 'image/jpeg', 'mikis schlüssel', '09052009448.jpg', NULL, '2009-10-24 19:15:48')[0m
+[paperclip] Saving attachments.
+[paperclip] saving /home/mike/biomap/public/system/fotos/8/medium/09052009448.jpg
+[paperclip] saving /home/mike/biomap/public/system/fotos/8/thumb/09052009448.jpg
+[paperclip] saving /home/mike/biomap/public/system/fotos/8/original/09052009448.jpg
+  [4;36;1mSQL (3.9ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/fotos/8
+Completed in 495ms (DB: 5) | 302 Found [http://localhost/fotos]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#show (for 127.0.0.1 at 2009-10-24 21:15:48) [GET]
+  Parameters: {"id"=>"8"}
+  [4;36;1mFoto Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mFoto Load (0.2ms)[0m   [0mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 8) [0m
+Rendering template within layouts/application
+Rendering fotos/show
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/fotos/8]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 21:15:59) [GET]
+  Parameters: {"id"=>"8"}
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.1ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 8) [0m
+Rendering template within layouts/application
+Rendering fotos/edit
+Rendered fotos/_form (3.0ms)
+Completed in 13ms (View: 8, DB: 1) | 200 OK [http://localhost/fotos/8/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#update (for 127.0.0.1 at 2009-10-24 21:16:23) [PUT]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"0EZWXAy+GTarJVZusCaNrrnsKBWtymSP/HsmVRXYqVE=", "id"=>"8", "foto"=>{"name"=>"Jette ist geil", "lng"=>"-2.120361328125", "description"=>"mikis schlüssel", "lat"=>"7.167753425504498"}}
+  [4;36;1mFoto Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mFoto Load (0.0ms)[0m   [0mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 8) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mFoto Update (0.2ms)[0m   [0mUPDATE `fotos` SET `lat` = 7.1677534255045, `lng` = -2.120361328125, `updated_at` = '2009-10-24 19:16:23' WHERE `id` = 8[0m
+[paperclip] Saving attachments.
+  [4;36;1mSQL (5.3ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/fotos/8
+Completed in 13ms (DB: 6) | 302 Found [http://localhost/fotos/8]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#show (for 127.0.0.1 at 2009-10-24 21:16:23) [GET]
+  Parameters: {"id"=>"8"}
+  [4;36;1mFoto Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mFoto Load (0.2ms)[0m   [0mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 8) [0m
+Rendering template within layouts/application
+Rendering fotos/show
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/fotos/8]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 21:16:28) [GET]
+  [4;35;1mFoto Load (0.3ms)[0m   [0mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 21:20:53) [GET]
+  [4;36;1mFoto Load (0.1ms)[0m   [0;1mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;35;1mFoto Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 21:21:02) [GET]
+  [4;35;1mFoto Load (0.1ms)[0m   [0mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;36;1mFoto Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 38ms (View: 6, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 21:21:36) [GET]
+  [4;36;1mFoto Load (0.1ms)[0m   [0;1mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 21:21:59) [GET]
+  [4;35;1mFoto Load (0.1ms)[0m   [0mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 21:22:24) [GET]
+  [4;36;1mFoto Load (0.1ms)[0m   [0;1mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 21:23:23) [GET]
+  [4;35;1mFoto Load (0.1ms)[0m   [0mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#show (for 127.0.0.1 at 2009-10-24 21:23:33) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mFoto Load (0.2ms)[0m   [0mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 5) [0m
+Rendering template within layouts/application
+Rendering fotos/show
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://localhost/fotos/5]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 21:23:37) [GET]
+  [4;35;1mFoto Load (0.1ms)[0m   [0mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 21:24:01) [GET]
+  [4;36;1mFoto Load (0.1ms)[0m   [0;1mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 21:24:10) [GET]
+  [4;35;1mFoto Load (0.1ms)[0m   [0mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 41ms (View: 35, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 21:25:14) [GET]
+  [4;36;1mFoto Load (0.1ms)[0m   [0;1mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 21:25:33) [GET]
+  [4;35;1mFoto Load (0.1ms)[0m   [0mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 21:25:52) [GET]
+  [4;36;1mFoto Load (0.1ms)[0m   [0;1mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;35;1mFoto Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 21:26:21) [GET]
+  [4;35;1mFoto Load (0.1ms)[0m   [0mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 38ms (View: 7, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 21:26:57) [GET]
+  [4;36;1mFoto Load (0.1ms)[0m   [0;1mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 21:27:33) [GET]
+  [4;35;1mFoto Load (0.1ms)[0m   [0mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 13ms (View: 7, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 21:31:49) [GET]
+  [4;36;1mFoto Load (0.1ms)[0m   [0;1mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 21:32:45) [GET]
+  [4;35;1mFoto Load (0.1ms)[0m   [0mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 21:34:09) [GET]
+  [4;36;1mFoto Load (0.1ms)[0m   [0;1mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 13ms (View: 7, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 21:35:37) [GET]
+  [4;35;1mFoto Load (0.1ms)[0m   [0mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 21:36:44) [GET]
+  [4;36;1mFoto Load (0.1ms)[0m   [0;1mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 13ms (View: 7, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 21:36:58) [GET]
+  [4;35;1mFoto Load (0.1ms)[0m   [0mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 21:37:37) [GET]
+  [4;36;1mFoto Load (0.1ms)[0m   [0;1mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#show (for 127.0.0.1 at 2009-10-24 22:24:07) [GET]
+  Parameters: {"id"=>"8"}
+  [4;35;1mFoto Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.1ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 8) [0m
+Rendering template within layouts/application
+Rendering fotos/show
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://localhost/fotos/8]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 22:24:10) [GET]
+  [4;36;1mFoto Load (0.1ms)[0m   [0;1mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#new (for 127.0.0.1 at 2009-10-24 22:24:26) [GET]
+  [4;35;1mFoto Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/new
+Rendered fotos/_form (3.1ms)
+Completed in 11ms (View: 7, DB: 1) | 200 OK [http://localhost/fotos/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#medium to png (for 127.0.0.1 at 2009-10-24 22:24:28) [GET]
+  Parameters: {"id"=>"missing"}
+
+ActionController::UnknownAction (No action responded to medium. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#create (for 127.0.0.1 at 2009-10-24 22:25:33) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"0EZWXAy+GTarJVZusCaNrrnsKBWtymSP/HsmVRXYqVE=", "foto"=>{"name"=>"dfgfdsgdf", "lng"=>"11.93939208984375", "description"=>"in below", "foto"=>#<File:/tmp/RackMultipart.12010.0>, "lat"=>"53.281856405230606"}}
+  [4;36;1mFoto Columns (16.2ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mFoto Create (0.3ms)[0m   [0;1mINSERT INTO `fotos` (`name`, `foto_updated_at`, `updated_at`, `foto_file_size`, `lng`, `foto_content_type`, `description`, `foto_file_name`, `lat`, `created_at`) VALUES('dfgfdsgdf', '2009-10-24 20:25:34', '2009-10-24 20:25:36', 4174891, 11.9393920898438, 'image/jpeg', 'in below', 'below_001.jpg', 53.2818564052306, '2009-10-24 20:25:36')[0m
+[paperclip] Saving attachments.
+[paperclip] saving /home/mike/biomap/public/system/fotos/9/medium/below_001.jpg
+[paperclip] saving /home/mike/biomap/public/system/fotos/9/thumb/below_001.jpg
+[paperclip] saving /home/mike/biomap/public/system/fotos/9/original/below_001.jpg
+  [4;35;1mSQL (1.5ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/fotos/9
+Completed in 2759ms (DB: 18) | 302 Found [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#show (for 127.0.0.1 at 2009-10-24 22:25:36) [GET]
+  Parameters: {"id"=>"9"}
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.2ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 9) [0m
+Rendering template within layouts/application
+Rendering fotos/show
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://localhost/fotos/9]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 22:25:41) [GET]
+  [4;36;1mFoto Load (0.3ms)[0m   [0;1mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;35;1mFoto Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 22:56:36) [GET]
+  [4;35;1mFoto Load (0.1ms)[0m   [0mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 14ms (View: 7, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 22:58:25) [GET]
+  [4;36;1mFoto Load (0.1ms)[0m   [0;1mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 37ms (View: 32, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 22:58:33) [GET]
+  [4;35;1mFoto Load (0.1ms)[0m   [0mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 22:58:56) [GET]
+  [4;36;1mFoto Load (0.1ms)[0m   [0;1mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 23:01:44) [GET]
+  [4;35;1mFoto Load (0.1ms)[0m   [0mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 23:06:01) [GET]
+  [4;36;1mFoto Load (0.1ms)[0m   [0;1mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;35;1mFoto Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 39ms (View: 7, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 23:06:09) [GET]
+  [4;35;1mFoto Load (0.2ms)[0m   [0mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 23:06:16) [GET]
+  [4;36;1mFoto Load (0.1ms)[0m   [0;1mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;35;1mFoto Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 23:06:24) [GET]
+  [4;35;1mFoto Load (0.1ms)[0m   [0mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 23:07:18) [GET]
+  [4;36;1mFoto Load (0.4ms)[0m   [0;1mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 23:08:06) [GET]
+  [4;35;1mFoto Load (0.1ms)[0m   [0mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;36;1mFoto Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 23:08:44) [GET]
+  [4;36;1mFoto Load (0.1ms)[0m   [0;1mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 23:09:10) [GET]
+  [4;35;1mFoto Load (0.1ms)[0m   [0mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 23:09:31) [GET]
+  [4;36;1mFoto Load (0.2ms)[0m   [0;1mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 23:11:18) [GET]
+  [4;35;1mFoto Load (0.1ms)[0m   [0mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 38ms (View: 7, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 23:13:03) [GET]
+  [4;36;1mFoto Load (0.1ms)[0m   [0;1mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#new (for 127.0.0.1 at 2009-10-24 23:13:14) [GET]
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/new
+Rendered fotos/_form (3.1ms)
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://localhost/fotos/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#medium to png (for 127.0.0.1 at 2009-10-24 23:13:16) [GET]
+  Parameters: {"id"=>"missing"}
+
+ActionController::UnknownAction (No action responded to medium. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 23:13:55) [GET]
+  [4;36;1mFoto Load (0.1ms)[0m   [0;1mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#new (for 127.0.0.1 at 2009-10-24 23:28:01) [GET]
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/new
+Rendered fotos/_form (3.1ms)
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://localhost/fotos/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#medium to png (for 127.0.0.1 at 2009-10-24 23:28:03) [GET]
+  Parameters: {"id"=>"missing"}
+
+ActionController::UnknownAction (No action responded to medium. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 23:29:35) [GET]
+  [4;36;1mFoto Load (0.1ms)[0m   [0;1mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#new (for 127.0.0.1 at 2009-10-24 23:30:18) [GET]
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/new
+Rendered fotos/_form (4.0ms)
+Completed in 11ms (View: 7, DB: 1) | 200 OK [http://localhost/fotos/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#medium to png (for 127.0.0.1 at 2009-10-24 23:30:20) [GET]
+  Parameters: {"id"=>"missing"}
+
+ActionController::UnknownAction (No action responded to medium. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#new (for 127.0.0.1 at 2009-10-24 23:31:37) [GET]
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/new
+Rendered fotos/_form (3.1ms)
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://localhost/fotos/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#medium to png (for 127.0.0.1 at 2009-10-24 23:31:39) [GET]
+  Parameters: {"id"=>"missing"}
+
+ActionController::UnknownAction (No action responded to medium. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#create (for 127.0.0.1 at 2009-10-24 23:35:13) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"0EZWXAy+GTarJVZusCaNrrnsKBWtymSP/HsmVRXYqVE=", "foto"=>{"name"=>"Moby", "lng"=>"37.019526958465576", "description"=>"Moby", "foto"=>#<File:/tmp/RackMultipart.12010.0>, "lat"=>"53.90088689254517"}}
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mFoto Create (0.2ms)[0m   [0mINSERT INTO `fotos` (`name`, `foto_updated_at`, `updated_at`, `foto_file_size`, `lng`, `foto_content_type`, `description`, `foto_file_name`, `lat`, `created_at`) VALUES('Moby', '2009-10-24 21:35:13', '2009-10-24 21:35:16', 4421029, 37.0195269584656, 'image/jpeg', 'Moby', 'below_010.jpg', 53.9008868925452, '2009-10-24 21:35:16')[0m
+[paperclip] Saving attachments.
+[paperclip] saving /home/mike/biomap/public/system/fotos/10/medium/below_010.jpg
+[paperclip] saving /home/mike/biomap/public/system/fotos/10/thumb/below_010.jpg
+[paperclip] saving /home/mike/biomap/public/system/fotos/10/original/below_010.jpg
+  [4;36;1mSQL (4.8ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/fotos/10
+Completed in 3216ms (DB: 6) | 302 Found [http://localhost/fotos]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#show (for 127.0.0.1 at 2009-10-24 23:35:17) [GET]
+  Parameters: {"id"=>"10"}
+  [4;36;1mFoto Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mFoto Load (0.2ms)[0m   [0mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 10) [0m
+Rendering template within layouts/application
+Rendering fotos/show
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://localhost/fotos/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#show (for 127.0.0.1 at 2009-10-24 23:35:51) [GET]
+  Parameters: {"id"=>"10"}
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.0ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 10) [0m
+Rendering template within layouts/application
+Rendering fotos/show
+Completed in 12ms (View: 8, DB: 1) | 200 OK [http://localhost/fotos/10]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#new (for 127.0.0.1 at 2009-10-24 23:35:53) [GET]
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/new
+Rendered fotos/_form (3.1ms)
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://localhost/fotos/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#create (for 127.0.0.1 at 2009-10-24 23:36:00) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"0EZWXAy+GTarJVZusCaNrrnsKBWtymSP/HsmVRXYqVE=", "foto"=>{"name"=>"Moby", "lng"=>"8.894526958465576", "description"=>"Moby", "foto"=>#<File:/tmp/RackMultipart.12010.0>, "lat"=>"45.27076401553556"}}
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mFoto Create (0.2ms)[0m   [0;1mINSERT INTO `fotos` (`name`, `foto_updated_at`, `updated_at`, `foto_file_size`, `lng`, `foto_content_type`, `description`, `foto_file_name`, `lat`, `created_at`) VALUES('Moby', '2009-10-24 21:36:00', '2009-10-24 21:36:03', 4421029, 8.89452695846558, 'image/jpeg', 'Moby', 'below_010.jpg', 45.2707640155356, '2009-10-24 21:36:03')[0m
+[paperclip] Saving attachments.
+[paperclip] saving /home/mike/biomap/public/system/fotos/11/medium/below_010.jpg
+[paperclip] saving /home/mike/biomap/public/system/fotos/11/thumb/below_010.jpg
+[paperclip] saving /home/mike/biomap/public/system/fotos/11/original/below_010.jpg
+  [4;35;1mSQL (4.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/fotos/11
+Completed in 3037ms (DB: 5) | 302 Found [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#show (for 127.0.0.1 at 2009-10-24 23:36:03) [GET]
+  Parameters: {"id"=>"11"}
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.2ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 11) [0m
+Rendering template within layouts/application
+Rendering fotos/show
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://localhost/fotos/11]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#show (for 127.0.0.1 at 2009-10-24 23:37:40) [GET]
+  Parameters: {"id"=>"11"}
+  [4;36;1mFoto Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mFoto Load (0.0ms)[0m   [0mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 11) [0m
+Rendering template within layouts/application
+Rendering fotos/show
+Completed in 11ms (View: 7, DB: 1) | 200 OK [http://localhost/fotos/11]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-24 23:37:40) [GET]
+  Parameters: {"1256420160"=>nil}
+
+ActionController::RoutingError (No route matches "/system/fotos/11/max/below_010.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#show (for 127.0.0.1 at 2009-10-24 23:37:42) [GET]
+  Parameters: {"id"=>"11"}
+  [4;36;1mFoto Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mFoto Load (0.1ms)[0m   [0mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 11) [0m
+Rendering template within layouts/application
+Rendering fotos/show
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://localhost/fotos/11]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-24 23:37:42) [GET]
+  Parameters: {"1256420160"=>nil}
+
+ActionController::RoutingError (No route matches "/system/fotos/11/max/below_010.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 23:37:46) [GET]
+  [4;36;1mFoto Load (0.3ms)[0m   [0;1mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;35;1mFoto Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 23:37:52) [GET]
+  [4;35;1mFoto Load (0.1ms)[0m   [0mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 23:37:55) [GET]
+  [4;36;1mFoto Load (0.1ms)[0m   [0;1mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#show (for 127.0.0.1 at 2009-10-24 23:38:00) [GET]
+  Parameters: {"id"=>"11"}
+  [4;35;1mFoto Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.0ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 11) [0m
+Rendering template within layouts/application
+Rendering fotos/show
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://localhost/fotos/11]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-24 23:38:00) [GET]
+  Parameters: {"1256420160"=>nil}
+
+ActionController::RoutingError (No route matches "/system/fotos/11/max/below_010.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 23:38:01) [GET]
+  [4;35;1mFoto Load (0.1ms)[0m   [0mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#show (for 127.0.0.1 at 2009-10-24 23:38:09) [GET]
+  Parameters: {"id"=>"9"}
+  [4;36;1mFoto Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mFoto Load (0.2ms)[0m   [0mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 9) [0m
+Rendering template within layouts/application
+Rendering fotos/show
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/fotos/9]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-24 23:38:09) [GET]
+  Parameters: {"1256415934"=>nil}
+
+ActionController::RoutingError (No route matches "/system/fotos/9/max/below_001.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 23:38:10) [GET]
+  [4;36;1mFoto Load (0.1ms)[0m   [0;1mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/fotos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT id FROM `fotos` [0m
+  [4;36;1mFoto Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mFoto Load (0.1ms)[0m   [0mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 5) [0m
+[paperclip] saving /home/mike/biomap/public/system/fotos/5/max/Kiss-these-hands.jpg
+[paperclip] saving /home/mike/biomap/public/system/fotos/5/original/Kiss-these-hands.jpg
+[paperclip] saving /home/mike/biomap/public/system/fotos/5/medium/Kiss-these-hands.jpg
+[paperclip] saving /home/mike/biomap/public/system/fotos/5/thumb/Kiss-these-hands.jpg
+  [4;36;1mFoto Load (0.3ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 6) [0m
+[paperclip] saving /home/mike/biomap/public/system/fotos/6/max/Skyline-color.jpg
+[paperclip] saving /home/mike/biomap/public/system/fotos/6/original/Skyline-color.jpg
+[paperclip] saving /home/mike/biomap/public/system/fotos/6/medium/Skyline-color.jpg
+[paperclip] saving /home/mike/biomap/public/system/fotos/6/thumb/Skyline-color.jpg
+  [4;35;1mFoto Load (0.3ms)[0m   [0mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 7) [0m
+[paperclip] saving /home/mike/biomap/public/system/fotos/7/max/090423_redesign_03.png
+[paperclip] saving /home/mike/biomap/public/system/fotos/7/original/090423_redesign_03.png
+[paperclip] saving /home/mike/biomap/public/system/fotos/7/medium/090423_redesign_03.png
+[paperclip] saving /home/mike/biomap/public/system/fotos/7/thumb/090423_redesign_03.png
+  [4;36;1mFoto Load (0.2ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 8) [0m
+[paperclip] saving /home/mike/biomap/public/system/fotos/8/max/09052009448.jpg
+[paperclip] saving /home/mike/biomap/public/system/fotos/8/original/09052009448.jpg
+[paperclip] saving /home/mike/biomap/public/system/fotos/8/medium/09052009448.jpg
+[paperclip] saving /home/mike/biomap/public/system/fotos/8/thumb/09052009448.jpg
+  [4;35;1mFoto Load (0.1ms)[0m   [0mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 9) [0m
+[paperclip] saving /home/mike/biomap/public/system/fotos/9/max/below_001.jpg
+[paperclip] saving /home/mike/biomap/public/system/fotos/9/original/below_001.jpg
+[paperclip] saving /home/mike/biomap/public/system/fotos/9/medium/below_001.jpg
+[paperclip] saving /home/mike/biomap/public/system/fotos/9/thumb/below_001.jpg
+  [4;36;1mFoto Load (0.2ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 10) [0m
+[paperclip] saving /home/mike/biomap/public/system/fotos/10/max/below_010.jpg
+[paperclip] saving /home/mike/biomap/public/system/fotos/10/original/below_010.jpg
+[paperclip] saving /home/mike/biomap/public/system/fotos/10/medium/below_010.jpg
+[paperclip] saving /home/mike/biomap/public/system/fotos/10/thumb/below_010.jpg
+  [4;35;1mFoto Load (0.1ms)[0m   [0mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 11) [0m
+[paperclip] saving /home/mike/biomap/public/system/fotos/11/max/below_010.jpg
+[paperclip] saving /home/mike/biomap/public/system/fotos/11/original/below_010.jpg
+[paperclip] saving /home/mike/biomap/public/system/fotos/11/medium/below_010.jpg
+[paperclip] saving /home/mike/biomap/public/system/fotos/11/thumb/below_010.jpg
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#show (for 127.0.0.1 at 2009-10-24 23:40:49) [GET]
+  Parameters: {"id"=>"11"}
+  [4;35;1mFoto Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.1ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 11) [0m
+Rendering template within layouts/application
+Rendering fotos/show
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://localhost/fotos/11]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 23:40:57) [GET]
+  Parameters: {"id"=>"11"}
+  [4;36;1mFoto Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mFoto Load (0.1ms)[0m   [0mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 11) [0m
+Rendering template within layouts/application
+Rendering fotos/edit
+Rendered fotos/_form (3.5ms)
+Completed in 45ms (View: 14, DB: 1) | 200 OK [http://localhost/fotos/11/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#edit (for 127.0.0.1 at 2009-10-24 23:41:06) [GET]
+  Parameters: {"id"=>"11"}
+  [4;35;1mFoto Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `fotos`[0m
+  [4;36;1mFoto Load (0.0ms)[0m   [0;1mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 11) [0m
+Rendering template within layouts/application
+Rendering fotos/edit
+Rendered fotos/_form (2.8ms)
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/fotos/11/edit]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#update (for 127.0.0.1 at 2009-10-24 23:43:06) [PUT]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"0EZWXAy+GTarJVZusCaNrrnsKBWtymSP/HsmVRXYqVE=", "id"=>"11", "foto"=>{"name"=>"Moby", "lng"=>"13.399655341054313", "description"=>"Moby", "lat"=>"52.530350593976905"}}
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mFoto Load (0.1ms)[0m   [0mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 11) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mFoto Update (0.2ms)[0m   [0mUPDATE `fotos` SET `lat` = 52.5303505939769, `lng` = 13.3996553410543, `updated_at` = '2009-10-24 21:43:06' WHERE `id` = 11[0m
+[paperclip] Saving attachments.
+  [4;36;1mSQL (4.6ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/fotos/11
+Completed in 11ms (DB: 6) | 302 Found [http://localhost/fotos/11]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#show (for 127.0.0.1 at 2009-10-24 23:43:06) [GET]
+  Parameters: {"id"=>"11"}
+  [4;36;1mFoto Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+  [4;35;1mFoto Load (0.2ms)[0m   [0mSELECT * FROM `fotos` WHERE (`fotos`.`id` = 11) [0m
+Rendering template within layouts/application
+Rendering fotos/show
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://localhost/fotos/11]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FotosController#index (for 127.0.0.1 at 2009-10-24 23:43:32) [GET]
+  [4;35;1mFoto Load (0.3ms)[0m   [0mSELECT * FROM `fotos` ORDER BY created_at[0m
+  [4;36;1mFoto Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `fotos`[0m
+Rendering template within layouts/application
+Rendering fotos/index
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/fotos]

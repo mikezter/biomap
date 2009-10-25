@@ -1,0 +1,24 @@
+<% title "Foto" %>
+
+<p>
+  <strong>Name:</strong>
+  <%=h @foto.name %>
+</p>
+<p>
+  <strong>Foto</strong>
+  <%= image_tag @foto.foto.url(:max) %>
+</p>
+<p>
+  <strong>Lat:</strong>
+  <%=h @foto.lat %>
+</p>
+<p>
+  <strong>Lng:</strong>
+  <%=h @foto.lng %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_foto_path(@foto) %> |
+  <%= link_to "Destroy", @foto, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", fotos_path %>
+</p>
